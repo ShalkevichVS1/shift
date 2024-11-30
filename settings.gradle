@@ -1,3 +1,4 @@
 rootProject.name = 'shift'
 include 'task2'
+include 'task3'
 
