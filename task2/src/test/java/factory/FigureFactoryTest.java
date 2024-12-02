@@ -1,3 +1,5 @@
+package factory;
+
 import com.shalkevich.factory.FigureFactory;
 import com.shalkevich.figures.Circle;
 import com.shalkevich.figures.Figure;
@@ -9,16 +11,16 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 /**
- * Ïðîâåðêà ôóíêöèîíàëüíîñòè êëàññà {@link FigureFactory}.
+ * ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¾Ð½Ð°Ð»ÑŒÐ½Ð¾ÑÑ‚Ð¸ ÐºÐ»Ð°ÑÑÐ° {@link FigureFactory}.
  */
 class FigureFactoryTest {
     private final FigureFactory factory = new FigureFactory();
 
     /**
-     * Ïðîâåðêà ñîçäàíèÿ êðóãà.
+     * ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ ÐºÑ€ÑƒÐ³Ð°.
      */
     @Test
-    void createCircle() {
+    void testCreateCircle() {
         Figure figure = factory.createFigure("CIRCLE", new String[]{"5"});
         assertEquals(Circle.class, figure.getClass());
         Circle circle = (Circle) figure;
@@ -26,10 +28,10 @@ class FigureFactoryTest {
     }
 
     /**
-     * Ïðîâåðêà ñîçäàíèÿ ïðÿìîóãîëüíèêà.
+     * ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ Ð¿Ñ€ÑÐ¼Ð¾ÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ°.
      */
     @Test
-    void createRectangle() {
+    void testCreateRectangle() {
         Figure figure = factory.createFigure("RECTANGLE", new String[]{"4", "6"});
         assertEquals(Rectangle.class, figure.getClass());
         Rectangle rectangle = (Rectangle) figure;
@@ -38,10 +40,10 @@ class FigureFactoryTest {
     }
 
     /**
-     * Ïðîâåðêà ñîçäàíèÿ òðåóãîëüíèêà.
+     * ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ Ñ‚Ñ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ°.
      */
     @Test
-    void createTriangle() {
+    void testCreateTriangle() {
         Figure figure = factory.createFigure("TRIANGLE", new String[]{"3", "4", "5"});
         assertEquals(Triangle.class, figure.getClass());
         Triangle triangle = (Triangle) figure;
@@ -51,10 +53,12 @@ class FigureFactoryTest {
     }
 
     /**
-     * Ïðîâåðêà ñîçäàíèÿ ôèãóðû ñ íåèçâåñòíûì òèïîì.
+     * ÐŸÑ€Ð¾Ð²ÐµÑ€ÐºÐ° ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ Ñ„Ð¸Ð³ÑƒÑ€Ñ‹ Ñ Ð½ÐµÐ¸Ð·Ð²ÐµÑÑ‚Ð½Ñ‹Ð¼ Ñ‚Ð¸Ð¿Ð¾Ð¼.
      */
     @Test
-    void unknownFigureType() {
+    void testUnknownFigureType() {
         assertThrows(IllegalArgumentException.class, () -> factory.createFigure("UNKNOWN", new String[]{}));
     }
 }
+
+

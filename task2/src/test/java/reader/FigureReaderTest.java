@@ -1,8 +1,11 @@
+package reader;
+
 import com.shalkevich.factory.FigureFactory;
 import com.shalkevich.figures.Circle;
 import com.shalkevich.figures.Figure;
 import com.shalkevich.reader.FigureReader;
-import com.shalkevich.writer.OutputWriter;
+import com.shalkevich.writer.OutputService;
+import com.shalkevich.writer.OutputWriterFactory;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -72,7 +75,7 @@ class FigureReaderTest {
      */
     @Test
     void testReadAndProcessFigure() throws IOException {
-        OutputWriter writer = new OutputWriter();
-        reader.readAndProcessFigure("circle.txt", "console", writer);
+        OutputService writer = OutputWriterFactory.getOutputWriter("console");
+        reader.readAndProcessFigure("circle.txt", writer);
     }
 }

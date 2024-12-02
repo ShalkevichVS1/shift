@@ -1,3 +1,5 @@
+package figures;
+
 import com.shalkevich.figures.Circle;
 import org.junit.jupiter.api.Test;
 
@@ -12,7 +14,7 @@ class CircleTest {
      * Проверка создания объекта Circle и корректности вычисляемых характеристик.
      */
     @Test
-    void testCircle() {
+    void testCircleCreationAndProperties() {
         Circle circle = new Circle(5);
         assertEquals("Круг", circle.getName());
         assertEquals(78.54, circle.getArea(), 0.01);

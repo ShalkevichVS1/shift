@@ -25,11 +25,4 @@ public interface Figure {
      * @return Периметр фигуры.
      */
     double getPerimeter();
-
-    /**
-     * Возвращает специфические характеристики фигуры.
-     *
-     * @return Характеристи фигуры.
-     */
-    String getSpecificCharacteristics();
 }

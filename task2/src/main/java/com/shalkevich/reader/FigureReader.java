@@ -1,8 +1,8 @@
 package com.shalkevich.reader;
 
 import com.shalkevich.factory.FigureFactory;
-import com.shalkevich.writer.OutputWriter;
 import com.shalkevich.figures.Figure;
+import com.shalkevich.writer.OutputService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,7 +13,7 @@ import java.io.InputStreamReader;
 import java.util.List;
 
 /**
- * Чтения данных фигур из файлов и их обработка.
+ * Чтение данных фигур из файлов и их обработка.
  */
 public class FigureReader {
 
@@ -34,14 +34,13 @@ public class FigureReader {
     /**
      * Читает фигуру из файла и обрабатывает ее.
      *
-     * @param filePath   Путь к файлу с данными фигуры.
-     * @param outputMode Режим вывода (консоль или файл).
-     * @param writer     Объект OutputWriter для записи результатов.
+     * @param filePath Путь к файлу с данными фигуры.
+     * @param writer   Объект OutputService для записи результатов.
      * @throws IOException если происходит ошибка при чтении файла.
      */
-    public void readAndProcessFigure(String filePath, String outputMode, OutputWriter writer) throws IOException {
+    public void readAndProcessFigure(String filePath, OutputService writer) throws IOException {
         Figure figure = readFigure(filePath);
-        writer.writeOutput(figure, outputMode);
+        writer.writeOutput(figure);
         logger.info("Figure processed and output written");
     }
 

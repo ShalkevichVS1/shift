@@ -1,20 +1,14 @@
 package com.shalkevich.figures;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 /**
- * Объект, прямоугольник.
+ * Класс, представляющий прямоугольник.
  */
-public class Rectangle extends AbstractFigure {
-
-    private static final Logger logger = LoggerFactory.getLogger(Rectangle.class);
-
+public class Rectangle implements Figure {
     private final double length;
     private final double width;
 
     /**
-     * Конструктор для создания прямоугольника с заданной длиной и шириной.
+     * Конструктор для создания прямоугольника с заданными длиной и шириной.
      *
      * @param length Длина прямоугольника.
      * @param width  Ширина прямоугольника.
@@ -22,19 +16,33 @@ public class Rectangle extends AbstractFigure {
     public Rectangle(double length, double width) {
         this.length = length;
         this.width = width;
-        logger.info("Rectangle created with length: {} and width: {}", length, width);
     }
 
+    /**
+     * Возвращает название фигуры.
+     *
+     * @return Название фигуры.
+     */
     @Override
     public String getName() {
         return "Прямоугольник";
     }
 
+    /**
+     * Вычисляет площадь прямоугольника.
+     *
+     * @return Площадь прямоугольника.
+     */
     @Override
     public double getArea() {
         return length * width;
     }
 
+    /**
+     * Вычисляет периметр прямоугольника.
+     *
+     * @return Периметр прямоугольника.
+     */
     @Override
     public double getPerimeter() {
         return 2 * (length + width);
@@ -65,12 +73,5 @@ public class Rectangle extends AbstractFigure {
      */
     public double getDiagonal() {
         return Math.sqrt(length * length + width * width);
-    }
-    
-    @Override
-    public String getSpecificCharacteristics() {
-        logger.info("Getting specific characteristics for Rectangle");
-        return String.format("\nДлина: %.2f мм\nШирина: %.2f мм\nДиагональ: %.2f мм",
-                getLength(), getWidth(), getDiagonal());
     }
 }

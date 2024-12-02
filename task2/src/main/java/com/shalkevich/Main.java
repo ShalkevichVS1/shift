@@ -2,7 +2,8 @@ package com.shalkevich;
 
 import com.shalkevich.factory.FigureFactory;
 import com.shalkevich.reader.FigureReader;
-import com.shalkevich.writer.OutputWriter;
+import com.shalkevich.writer.OutputWriterFactory;
+import com.shalkevich.writer.OutputService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,7 +24,7 @@ public class Main {
 
         if (args.length < 1) {
             logger.error("No input file provided");
-            System.out.println("Usage: java Main <inputFile> [outputMode]");
+            logger.info("Usage: java Main <inputFile> [outputMode]");
             return;
         }
 
@@ -31,13 +32,12 @@ public class Main {
         String outputMode = args.length > 1 ? args[1] : "console";
 
         FigureReader reader = new FigureReader(new FigureFactory());
-        OutputWriter writer = new OutputWriter();
+        OutputService writer = OutputWriterFactory.getOutputWriter(outputMode);
 
         try {
-            reader.readAndProcessFigure(inputFile, outputMode, writer);
+            reader.readAndProcessFigure(inputFile, writer);
         } catch (Exception e) {
             logger.error("Error processing figure: ", e);
-            e.printStackTrace();
         }
     }
 }

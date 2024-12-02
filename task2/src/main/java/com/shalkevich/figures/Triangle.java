@@ -1,15 +1,9 @@
 package com.shalkevich.figures;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 /**
- * Объект, треугольник.
+ * Класс, представляющий треугольник.
  */
-public class Triangle extends AbstractFigure {
-
-    private static final Logger logger = LoggerFactory.getLogger(Triangle.class);
-
+public class Triangle implements Figure {
     private final double a;
     private final double b;
     private final double c;
@@ -17,64 +11,71 @@ public class Triangle extends AbstractFigure {
     /**
      * Конструктор для создания треугольника с заданными сторонами.
      *
-     * @param a Длина стороны A.
-     * @param b Длина стороны B.
-     * @param c Длина стороны C.
+     * @param a Сторона A.
+     * @param b Сторона B.
+     * @param c Сторона C.
      */
     public Triangle(double a, double b, double c) {
         this.a = a;
         this.b = b;
         this.c = c;
-        logger.info("Triangle created with sides: {}, {}, {}", a, b, c);
     }
 
+    /**
+     * Возвращает название фигуры.
+     *
+     * @return Название фигуры.
+     */
     @Override
     public String getName() {
         return "Треугольник";
     }
 
+    /**
+     * Вычисляет площадь треугольника по формуле Герона.
+     *
+     * @return Площадь треугольника.
+     */
     @Override
     public double getArea() {
         double s = (a + b + c) / 2;
         return Math.sqrt(s * (s - a) * (s - b) * (s - c));
     }
 
+    /**
+     * Вычисляет периметр треугольника.
+     *
+     * @return Периметр треугольника.
+     */
     @Override
     public double getPerimeter() {
         return a + b + c;
     }
 
     /**
-     * Возвращает длину стороны A.
+     * Возвращает сторону A.
      *
-     * @return Длина стороны A.
+     * @return Сторона A.
      */
     public double getA() {
         return a;
     }
 
     /**
-     * Возвращает длину стороны B.
+     * Возвращает сторону B.
      *
-     * @return Длина стороны B.
+     * @return Сторона B.
      */
     public double getB() {
         return b;
     }
 
     /**
-     * Возвращает длину стороны C.
+     * Возвращает сторону C.
      *
-     * @return Длина стороны C.
+     * @return Сторона C.
      */
     public double getC() {
         return c;
-    }
-
-    @Override
-    public String getSpecificCharacteristics() {
-        logger.info("Getting specific characteristics for Triangle");
-        return String.format("\nСторона A: %.2f мм\nСторона B: %.2f мм\nСторона C: %.2f мм",
-                getA(), getB(), getC());
     }
 }

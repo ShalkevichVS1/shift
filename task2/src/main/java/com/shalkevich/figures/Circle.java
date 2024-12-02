@@ -1,15 +1,9 @@
 package com.shalkevich.figures;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 /**
- * Объект, круг.
+ * Класс, представляющий круг.
  */
-public class Circle extends AbstractFigure {
-
-    private static final Logger logger = LoggerFactory.getLogger(Circle.class);
-
+public class Circle implements Figure {
     private final double radius;
 
     /**
@@ -19,26 +13,40 @@ public class Circle extends AbstractFigure {
      */
     public Circle(double radius) {
         this.radius = radius;
-        logger.info("Circle created with radius: {}", radius);
     }
 
+    /**
+     * Возвращает название фигуры.
+     *
+     * @return Название фигуры.
+     */
     @Override
     public String getName() {
         return "Круг";
     }
 
+    /**
+     * Вычисляет площадь круга.
+     *
+     * @return Площадь круга.
+     */
     @Override
     public double getArea() {
-        return Math.PI * radius * radius;
+        return Math.PI * Math.pow(radius, 2);
     }
 
+    /**
+     * Вычисляет периметр круга.
+     *
+     * @return Периметр круга.
+     */
     @Override
     public double getPerimeter() {
         return 2 * Math.PI * radius;
     }
 
     /**
-     * Радиус круга.
+     * Возвращает радиус круга.
      *
      * @return Радиус круга.
      */
@@ -47,17 +55,11 @@ public class Circle extends AbstractFigure {
     }
 
     /**
-     * Диаметр круга.
+     * Возвращает диаметр круга.
      *
      * @return Диаметр круга.
      */
     public double getDiameter() {
         return 2 * radius;
-    }
-    
-    @Override
-    public String getSpecificCharacteristics() {
-        logger.info("Getting specific characteristics for Circle");
-        return String.format("\nРадиус: %.2f мм\nДиаметр: %.2f мм", getRadius(), getDiameter());
     }
 }
