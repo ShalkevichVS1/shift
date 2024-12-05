@@ -28,7 +28,7 @@ public class GameService {
         Game game = new Game(gameId.toString(), rows, cols, minesCount);
         boardHelper.initializeGame(game);
         System.out.println("Game initialized: ");
-        boardHelper.printBoard(game); // Вызов метода printBoard для вывода игрового поля
+        boardHelper.printBoard(game);
         games.put(gameId, game);
         return game;
     }
@@ -44,12 +44,14 @@ public class GameService {
     public Game revealCell(UUID gameId, int row, int col) {
         Game game = games.get(gameId);
         if (game != null && !game.isGameOver()) {
-            if (boardHelper.revealCell(game, row, col)) {
+            boardHelper.revealCell(game, row, col);
+            if (boardHelper.isMineExploded(game, row, col)) {
                 game.setGameOver(true);
-            }
-            if (checkWin(game)) {
+                showGameOverMessage();
+            } else if (boardHelper.checkWin(game)) {
+                game.setGameOver(true);
+                game.setWin(true);
                 showWinMessage();
-                game.setGameOver(true);
             }
         }
         return game;
@@ -67,41 +69,28 @@ public class GameService {
         Game game = games.get(gameId);
         if (game != null && !game.isGameOver()) {
             boardHelper.toggleFlag(game, row, col);
-            if (checkWin(game)) {
-                showWinMessage();
+            if (boardHelper.checkWin(game)) {
                 game.setGameOver(true);
+                game.setWin(true);
+                showWinMessage();
             }
         }
         return game;
     }
 
     /**
-     * Проверяет, выполнены ли условия выигрыша.
-     *
-     * @param game объект Game
-     * @return true, если выполнены условия выигрыша; иначе false
+     * Отображает сообщение о выигрыше.
      */
-    private boolean checkWin(Game game) {
-        // Условия выигрыша: все клетки, кроме мин, раскрыты или все мины помечены флагами
-        boolean allCellsRevealed = true;
-        boolean allMinesFlagged = true;
-        for (int row = 0; row < game.getRows(); row++) {
-            for (int col = 0; col < game.getCols(); col++) {
-                if (!game.getCell(row, col).isRevealed() && !game.getCell(row, col).isMine()) {
-                    allCellsRevealed = false;
-                }
-                if (game.getCell(row, col).isMine() && !game.getCell(row, col).isFlagged()) {
-                    allMinesFlagged = false;
-                }
-            }
-        }
-        return allCellsRevealed || allMinesFlagged;
+    public void showWinMessage() {
+        System.out.println("Поздравляем! Вы выиграли!");
     }
 
     /**
-     * Отображает сообщение о выигрыше.
+     * Отображает сообщение о проигрыше.
      */
-    private void showWinMessage() {
-        System.out.println("Поздравляем! Вы выиграли!");
+    public void showGameOverMessage() {
+        System.out.println("Вы проиграли! Попробуйте ещё раз!");
     }
 }
+
+

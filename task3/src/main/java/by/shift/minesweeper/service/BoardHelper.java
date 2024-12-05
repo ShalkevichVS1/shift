@@ -28,25 +28,36 @@ public class BoardHelper {
     }
 
     /**
-     * Раскрывает ячейку и возвращает true, если игра завершена (игрок проиграл).
+     * Раскрывает ячейку.
      *
      * @param game объект Game
      * @param row номер строки ячейки
      * @param col номер колонки ячейки
-     * @return true, если игра завершена; иначе false
      */
-    public boolean revealCell(Game game, int row, int col) {
+    public void revealCell(Game game, int row, int col) {
         Cell cell = game.getCell(row, col);
         if (!cell.isRevealed() && !cell.isFlagged()) {
             cell.setRevealed(true);
             game.setFirstMoveMade(true);
             if (cell.isMine()) {
-                return true; // Игра завершена
+                game.setGameOver(true);
             } else if (cell.getAdjacentMines() == 0) {
                 revealAdjacentCells(game, row, col);
             }
         }
-        return checkWin(game);
+    }
+
+    /**
+     * Проверяет, взорвана ли мина.
+     *
+     * @param game объект Game
+     * @param row номер строки ячейки
+     * @param col номер колонки ячейки
+     * @return true, если мина взорвана; иначе false
+     */
+    public boolean isMineExploded(Game game, int row, int col) {
+        Cell cell = game.getCell(row, col);
+        return cell.isMine() && cell.isRevealed();
     }
 
     /**
@@ -60,14 +71,18 @@ public class BoardHelper {
         Cell cell = game.getCell(row, col);
         if (!cell.isRevealed()) {
             if (cell.isFlagged()) {
-                cell.setFlagged(false);
-                game.setFlagCount(game.getFlagCount() + 1);
+                cell.setFlagged(false); // Снимаем флаг
+                game.setFlagCount(game.getFlagCount() + 1); // Увеличиваем количество флагов
             } else if (game.getFlagCount() > 0) {
-                cell.setFlagged(true);
-                game.setFlagCount(game.getFlagCount() - 1);
+                cell.setFlagged(true); // Ставим флаг
+                game.setFlagCount(game.getFlagCount() - 1); // Уменьшаем количество флагов
             }
         }
     }
+
+
+
+
 
     /**
      * Расставляет мины на игровом поле.
@@ -145,7 +160,9 @@ public class BoardHelper {
                 if (dr == 0 && dc == 0) continue;
                 int newRow = row + dr;
                 int newCol = col + dc;
-                if (isValidCell(game, newRow, newCol) && !game.getCell(newRow, newCol).isRevealed()) {
+                if (isValidCell(game, newRow, newCol) &&
+                        !game.getCell(newRow, newCol).isRevealed() &&
+                        !game.getCell(newRow, newCol).isFlagged()) {
                     game.getCell(newRow, newCol).setRevealed(true);
                     if (game.getCell(newRow, newCol).getAdjacentMines() == 0) {
                         revealAdjacentCells(game, newRow, newCol);
@@ -173,11 +190,10 @@ public class BoardHelper {
      * @param game объект Game
      * @return true, если игрок выиграл; иначе false
      */
-    private boolean checkWin(Game game) {
+    public boolean checkWin(Game game) {
         for (int row = 0; row < game.getRows(); row++) {
             for (int col = 0; col < game.getCols(); col++) {
-                Cell cell = game.getCell(row, col);
-                if (!cell.isMine() && !cell.isRevealed()) {
+                if (!game.getCell(row, col).isRevealed() && !game.getCell(row, col).isMine()) {
                     return false;
                 }
             }

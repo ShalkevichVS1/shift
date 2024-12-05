@@ -1,8 +1,6 @@
 package by.shift.minesweeper.model;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
 @Data
 public class Game {
@@ -14,8 +12,8 @@ public class Game {
     private int flaggedMines; // Количество правильно помеченных флагами мин
     private final Cell[][] board; // Игровое поле в виде двумерного массива ячеек
     private boolean gameOver; // Статус игры, показывающий, завершена ли игра
-    @Getter @Setter
     private boolean firstMoveMade; // Статус, показывающий, был ли совершен первый ход
+    private boolean win; // Поле для определения победы
 
     public Game(String id, int rows, int cols, int minesCount) {
         this.id = id;
@@ -27,6 +25,8 @@ public class Game {
         this.flaggedMines = 0;
         this.flagCount = minesCount;
         this.firstMoveMade = false;
+        this.win = false;
+
     }
 
     public Cell getCell(int row, int col) {
@@ -36,4 +36,5 @@ public class Game {
     public void setCell(int row, int col, Cell cell) {
         board[row][col] = cell;
     }
+
 }

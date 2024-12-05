@@ -54,9 +54,11 @@ async function toggleFlag(row, col) {
     updateBoard(data.board);
     updateFlagCount(data.flagCount);
 
-    if (data.gameOver && data.win) {
+    if (data.gameOver) {
         gameOver = true;
-        showWinModal();
+        if (data.win) {
+            showWinModal();
+        }
     }
 }
 
@@ -97,7 +99,6 @@ function updateBoard(boardData, row, col) {
                 } else {
                     cell.textContent = '💣';
                 }
-
             } else if (cellData.revealed) {
                 cell.classList.add('revealed');
                 if (cellData.adjacentMines > 0) {
