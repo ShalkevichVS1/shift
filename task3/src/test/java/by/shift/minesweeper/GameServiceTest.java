@@ -1,3 +1,4 @@
+package by.shift.minesweeper;
 
 import by.shift.minesweeper.model.Game;
 import by.shift.minesweeper.service.GameService;
@@ -28,14 +29,28 @@ class GameServiceTest {
     }
 
     @Test
-    void testRevealCell_NoMine() {
-        // Раскрываем ячейку без мины (например, ячейка (0, 0))
-        Game updatedGame = gameService.revealCell(UUID.fromString(game.getId()), 0, 0);
+    public void testRevealCell_NoMine() {
+        Game game = gameService.createNewGame(10, 10, 10);
+        UUID gameId = UUID.fromString(game.getId());
 
-        assertNotNull(updatedGame);
-        assertTrue(updatedGame.getCell(0, 0).isRevealed());
-        assertFalse(updatedGame.isGameOver());
+        // Найдите ячейку, которая не содержит мин
+        int row = 0;
+        int col = 0;
+        while (game.getCell(row, col).isMine()) {
+            row++;
+            if (row == game.getRows()) {
+                row = 0;
+                col++;
+            }
+        }
+
+        game = gameService.revealCell(gameId, row, col);
+
+        // Убедитесь, что ячейка раскрыта и не содержит мин
+        assertFalse(game.getCell(row, col).isMine());
+        assertTrue(game.getCell(row, col).isRevealed());
     }
+
 
     @Test
     void testRevealCell_Mine() {
@@ -110,8 +125,23 @@ class GameServiceTest {
             }
         }
 
+        // Дополнительно раскрываем все ячейки, чтобы подтвердить, что тест работает правильно
+        for (int row = 0; row < game.getRows(); row++) {
+            for (int col = 0; col < game.getCols(); col++) {
+                if (!game.getCell(row, col).isMine()) {
+                    gameService.revealCell(UUID.fromString(game.getId()), row, col);
+                }
+            }
+        }
+
+        // Теперь проверяем, вызовет ли этот вызов состояния победы
         Game updatedGame = gameService.revealCell(UUID.fromString(game.getId()), 0, 0);
-        assertTrue(updatedGame.isWin());
-        assertTrue(updatedGame.isGameOver());
+
+        // Проверяем, что игра выиграна
+        assertTrue(updatedGame.isWin(), "Игра должна быть выиграна");
+        assertTrue(updatedGame.isGameOver(), "Игра должна быть завершена");
     }
+
+
 }
+

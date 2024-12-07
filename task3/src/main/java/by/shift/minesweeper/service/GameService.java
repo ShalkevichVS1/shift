@@ -1,18 +1,20 @@
 package by.shift.minesweeper.service;
 
 import by.shift.minesweeper.model.Game;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * GameService отвечает за управление игровыми сессиями Сапёра.
  */
 @Service
+@Slf4j
 public class GameService {
-    private final Map<UUID, Game> games = new HashMap<>();
+    private final Map<UUID, Game> games = new ConcurrentHashMap<>();
     private final BoardHelper boardHelper = new BoardHelper();
 
     /**
@@ -27,8 +29,10 @@ public class GameService {
         UUID gameId = UUID.randomUUID();
         Game game = new Game(gameId.toString(), rows, cols, minesCount);
         boardHelper.initializeGame(game);
-        System.out.println("Game initialized: ");
-        boardHelper.printBoard(game);
+        if (log.isDebugEnabled()) {
+            log.info("Game initialized: ");
+            boardHelper.printBoard(game);
+        }
         games.put(gameId, game);
         return game;
     }
@@ -82,14 +86,14 @@ public class GameService {
      * Отображает сообщение о выигрыше.
      */
     public void showWinMessage() {
-        System.out.println("Поздравляем! Вы выиграли!");
+        log.info("Поздравляем! Вы выиграли!");
     }
 
     /**
      * Отображает сообщение о проигрыше.
      */
     public void showGameOverMessage() {
-        System.out.println("Вы проиграли! Попробуйте ещё раз!");
+        log.info("Вы проиграли! Попробуйте ещё раз!");
     }
 }
 

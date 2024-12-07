@@ -2,10 +2,12 @@ package by.shift.minesweeper.service;
 
 import by.shift.minesweeper.model.Cell;
 import by.shift.minesweeper.model.Game;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * BoardHelper содержит вспомогательные методы для управления игровым полем Сапёра.
  */
+@Slf4j
 public class BoardHelper {
 
     /**
@@ -209,20 +211,22 @@ public class BoardHelper {
     void printBoard(Game game) {
         int rows = game.getRows();
         int cols = game.getCols();
-        System.out.println("---------- Игровое поле ----------");
+        log.debug("---------- Игровое поле ----------");
+        StringBuilder stringBuilder = new StringBuilder();
         for (int row = 0; row < rows; row++) {
             for (int col = 0; col < cols; col++) {
                 Cell cell = game.getCell(row, col);
                 if (cell.isMine()) {
-                    System.out.print("X ");
+                    stringBuilder.append(String.format("%-2s", "X"));
                 } else if (cell.isRevealed()) {
-                    System.out.print(cell.getAdjacentMines() + " ");
+                    stringBuilder.append(String.format("%-2d", cell.getAdjacentMines()));
                 } else {
-                    System.out.print(". ");
+                    stringBuilder.append(String.format("%-2s", "."));
                 }
             }
-            System.out.println();
+            stringBuilder.append("\n");
         }
-        System.out.println("----------------------------------");
+        log.info("\n" + stringBuilder);
+        log.info("----------------------------------");
     }
 }

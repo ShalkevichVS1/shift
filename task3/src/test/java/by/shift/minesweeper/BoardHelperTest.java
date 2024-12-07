@@ -1,3 +1,5 @@
+package by.shift.minesweeper;
+
 import by.shift.minesweeper.model.Cell;
 import by.shift.minesweeper.model.Game;
 import by.shift.minesweeper.service.BoardHelper;
