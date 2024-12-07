@@ -1,20 +1,23 @@
 package com.shalkevich.description;
 
+import com.shalkevich.figures.Figure;
 import com.shalkevich.figures.Rectangle;
 
 /**
  * Сервис для генерации описания прямоугольника.
  */
-public class RectangleDescriptionService {
+public class RectangleDescriptionService implements DescriptionService {
 
     /**
-     * Генерирует строку с описанием прямоугольника.
+     * Возвращает описание прямоугольника.
      *
-     * @param rectangle Объект прямоугольника.
-     * @return Строка с описанием прямоугольника, включающая длину, ширину и диагональ.
+     * @param figure Объект прямоугольника.
+     * @return Описание прямоугольника.
      */
-    public String getDescription(Rectangle rectangle) {
-        return String.format("\nДлина: %.2f мм\nШирина: %.2f мм\nДиагональ: %.2f мм",
-                rectangle.getLength(), rectangle.getWidth(), rectangle.getDiagonal());
+    @Override
+    public String generateDescription(Figure figure) {
+        Rectangle rectangle = (Rectangle) figure;
+        return String.format("Тип фигуры: %s\nПлощадь: %.2f кв. мм\nПериметр: %.2f мм\nДлина: %.2f мм\nШирина: %.2f мм\nДиагональ: %.2f мм",
+                rectangle.getName(), rectangle.getArea(), rectangle.getPerimeter(), rectangle.getLength(), rectangle.getWidth(), rectangle.getDiagonal());
     }
 }

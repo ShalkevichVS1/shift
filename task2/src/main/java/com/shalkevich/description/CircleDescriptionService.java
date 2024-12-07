@@ -1,19 +1,23 @@
 package com.shalkevich.description;
 
 import com.shalkevich.figures.Circle;
+import com.shalkevich.figures.Figure;
 
 /**
  * Сервис для генерации описания круга.
  */
-public class CircleDescriptionService {
+public class CircleDescriptionService implements DescriptionService {
 
     /**
-     * Генерирует строку с описанием круга.
+     * Возвращает описание круга.
      *
-     * @param circle Объект круга.
-     * @return Строка с описанием круга, включающая радиус и диаметр.
+     * @param figure Объект круга.
+     * @return Описание круга.
      */
-    public String getDescription(Circle circle) {
-        return String.format("\nРадиус: %.2f мм\nДиаметр: %.2f мм", circle.getRadius(), circle.getDiameter());
+    @Override
+    public String generateDescription(Figure figure) {
+        Circle circle = (Circle) figure;
+        return String.format("Тип фигуры: %s\nПлощадь: %.2f кв. мм\nПериметр: %.2f мм\nРадиус: %.2f мм\nДиаметр: %.2f мм",
+                circle.getName(), circle.getArea(), circle.getPerimeter(), circle.getRadius(), circle.getDiameter());
     }
 }

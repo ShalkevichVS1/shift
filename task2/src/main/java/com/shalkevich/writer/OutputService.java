@@ -1,7 +1,5 @@
 package com.shalkevich.writer;
 
-import com.shalkevich.figures.Figure;
-
 /**
  * Интерфейс для вывода данных фигуры.
  */
@@ -9,7 +7,7 @@ public interface OutputService {
     /**
      * Записывает данные фигуры.
      *
-     * @param figure Объект фигуры.
+     * @param description Строка с описанием фигуры.
      */
-    void writeOutput(Figure figure);
+    void writeOutput(String description);
 }

@@ -1,20 +1,23 @@
 package com.shalkevich.description;
 
+import com.shalkevich.figures.Figure;
 import com.shalkevich.figures.Triangle;
 
 /**
  * Сервис для генерации описания треугольника.
  */
-public class TriangleDescriptionService {
+public class TriangleDescriptionService implements DescriptionService {
 
     /**
-     * Генерирует строку с описанием треугольника.
+     * Возвращает описание треугольника.
      *
-     * @param triangle Объект треугольника.
-     * @return Строка с описанием треугольника, включающая стороны A, B и C.
+     * @param figure Объект треугольника.
+     * @return Описание треугольника.
      */
-    public String getDescription(Triangle triangle) {
-        return String.format("\nСторона A: %.2f мм\nСторона B: %.2f мм\nСторона C: %.2f мм",
-                triangle.getA(), triangle.getB(), triangle.getC());
+    @Override
+    public String generateDescription(Figure figure) {
+        Triangle triangle = (Triangle) figure;
+        return String.format("Тип фигуры: %s\nПлощадь: %.2f кв. мм\nПериметр: %.2f мм\nСторона A: %.2f мм\nСторона B: %.2f мм\nСторона C: %.2f мм",
+                triangle.getName(), triangle.getArea(), triangle.getPerimeter(), triangle.getA(), triangle.getB(), triangle.getC());
     }
 }

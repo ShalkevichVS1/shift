@@ -5,15 +5,8 @@
         </encoder>
     </appender>
 
-    <logger name="com.shalkevich.figures.Circle" level="OFF" additivity="false">
-        <appender-ref ref="CONSOLE"/>
-    </logger>
-
-    <logger name="com.shalkevich.writer.OutputWriter" level="OFF" additivity="false">
-        <appender-ref ref="CONSOLE"/>
-    </logger>
-
-    <root level="INFO">
+    <!-- Отключаем логирование для всех классов -->
+    <root level="OFF">
         <appender-ref ref="CONSOLE"/>
     </root>
 </configuration>

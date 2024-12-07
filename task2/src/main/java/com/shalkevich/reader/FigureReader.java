@@ -1,5 +1,7 @@
 package com.shalkevich.reader;
 
+import com.shalkevich.description.DescriptionService;
+import com.shalkevich.description.DescriptionServiceFactory;
 import com.shalkevich.factory.FigureFactory;
 import com.shalkevich.figures.Figure;
 import com.shalkevich.writer.OutputService;
@@ -40,7 +42,9 @@ public class FigureReader {
      */
     public void readAndProcessFigure(String filePath, OutputService writer) throws IOException {
         Figure figure = readFigure(filePath);
-        writer.writeOutput(figure);
+        DescriptionService descriptionService = DescriptionServiceFactory.getDescriptionService(figure);
+        String description = descriptionService.generateDescription(figure);
+        writer.writeOutput(description);
         logger.info("Figure processed and output written");
     }
 

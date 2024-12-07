@@ -1,4 +1,4 @@
-package figures;
+package com.shalkevich.figures;
 
 import com.shalkevich.figures.Circle;
 import org.junit.jupiter.api.Test;

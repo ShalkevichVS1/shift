@@ -1,6 +1,5 @@
-package factory;
+package com.shalkevich.factory;
 
-import com.shalkevich.factory.FigureFactory;
 import com.shalkevich.figures.Circle;
 import com.shalkevich.figures.Figure;
 import com.shalkevich.figures.Rectangle;
@@ -60,5 +59,3 @@ class FigureFactoryTest {
         assertThrows(IllegalArgumentException.class, () -> factory.createFigure("UNKNOWN", new String[]{}));
     }
 }
-
-
