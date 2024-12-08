@@ -3,7 +3,7 @@ package com.shalkevich.reader;
 import com.shalkevich.description.DescriptionService;
 import com.shalkevich.description.DescriptionServiceFactory;
 import com.shalkevich.factory.FigureFactory;
-import com.shalkevich.figures.Figure;
+import com.shalkevich.figures.*;
 import com.shalkevich.writer.OutputService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,7 +12,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 import java.util.List;
+import java.util.Locale;
+import java.util.stream.Collectors;
 
 /**
  * Чтение данных фигур из файлов и их обработка.
@@ -21,16 +25,21 @@ public class FigureReader {
 
     private static final Logger logger = LoggerFactory.getLogger(FigureReader.class);
 
-    private final FigureFactory factory;
+    private final FigureFactory figureFactory;
+    private final DescriptionServiceFactory descriptionServiceFactory;
+    private final DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.ENGLISH);
+    private final DecimalFormat df = new DecimalFormat("0.00", symbols);
 
     /**
-     * Конструктор для инициализации FigureReader с заданной фабрикой фигур.
+     * Конструктор для инициализации FigureReader с заданной фабрикой фигур и описательных сервисов.
      *
-     * @param factory Фабрика фигур для создания объектов фигур.
+     * @param figureFactory             Фабрика фигур для создания объектов фигур.
+     * @param descriptionServiceFactory Фабрика описательных сервисов.
      */
-    public FigureReader(FigureFactory factory) {
-        this.factory = factory;
-        logger.info("FigureReader initialized with FigureFactory");
+    public FigureReader(FigureFactory figureFactory, DescriptionServiceFactory descriptionServiceFactory) {
+        this.figureFactory = figureFactory;
+        this.descriptionServiceFactory = descriptionServiceFactory;
+        logger.info("FigureReader initialized with FigureFactory and DescriptionServiceFactory");
     }
 
     /**
@@ -42,7 +51,7 @@ public class FigureReader {
      */
     public void readAndProcessFigure(String filePath, OutputService writer) throws IOException {
         Figure figure = readFigure(filePath);
-        DescriptionService descriptionService = DescriptionServiceFactory.getDescriptionService(figure);
+        DescriptionService descriptionService = descriptionServiceFactory.getDescriptionService(determineFigureType(figure));
         String description = descriptionService.generateDescription(figure);
         writer.writeOutput(description);
         logger.info("Figure processed and output written");
@@ -67,10 +76,52 @@ public class FigureReader {
                 logger.error("File must contain at least two lines: {}", filePath);
                 throw new IllegalArgumentException("Файл должен содержать хотя бы две строки.");
             }
-            String type = lines.get(0).trim();
+            String typeStr = lines.get(0).trim();
+            FigureType type;
+            try {
+                type = FigureType.valueOf(typeStr.toUpperCase());
+            } catch (IllegalArgumentException e) {
+                throw new IllegalArgumentException("Unknown figure type: " + typeStr);
+            }
             String[] params = lines.get(1).trim().split(" ");
+            validateParameters(params);
             logger.info("Figure type read: {}", type);
-            return factory.createFigure(type, params);
+            return figureFactory.createFigure(type, params);
+        }
+    }
+
+    /**
+     * Валидация параметров фигуры.
+     *
+     * @param params Параметры для валидации.
+     */
+    private void validateParameters(String[] params) {
+        for (String param : params) {
+            try {
+                df.parse(param);
+            } catch (Exception e) {
+                throw new IllegalArgumentException("Invalid parameter format: " + param);
+            }
+        }
+    }
+
+    /**
+     * Определяет тип фигуры.
+     *
+     * @param figure Объект фигуры.
+     * @return Тип фигуры.
+     */
+    private FigureType determineFigureType(Figure figure) {
+        if (figure == null) {
+            throw new IllegalArgumentException("Figure cannot be null");
+        } else if (figure instanceof Circle) {
+            return FigureType.CIRCLE;
+        } else if (figure instanceof Rectangle) {
+            return FigureType.RECTANGLE;
+        } else if (figure instanceof Triangle) {
+            return FigureType.TRIANGLE;
+        } else {
+            throw new IllegalArgumentException("Unknown figure type: " + figure.getClass().getSimpleName());
         }
     }
 }

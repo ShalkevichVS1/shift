@@ -3,10 +3,17 @@ package com.shalkevich.description;
 import com.shalkevich.figures.Circle;
 import com.shalkevich.figures.Figure;
 
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.util.Locale;
+
 /**
  * Сервис для генерации описания круга.
  */
 public class CircleDescriptionService implements DescriptionService {
+
+    private final DecimalFormatSymbols symbols = new DecimalFormatSymbols(Locale.ENGLISH);
+    private final DecimalFormat df = new DecimalFormat("0.00", symbols);
 
     /**
      * Возвращает описание круга.
@@ -17,7 +24,7 @@ public class CircleDescriptionService implements DescriptionService {
     @Override
     public String generateDescription(Figure figure) {
         Circle circle = (Circle) figure;
-        return String.format("Тип фигуры: %s\nПлощадь: %.2f кв. мм\nПериметр: %.2f мм\nРадиус: %.2f мм\nДиаметр: %.2f мм",
-                circle.getName(), circle.getArea(), circle.getPerimeter(), circle.getRadius(), circle.getDiameter());
+        return String.format("Тип фигуры: %s\nПлощадь: %s кв. мм\nПериметр: %s мм\nРадиус: %s мм\nДиаметр: %s мм",
+                circle.getName(), df.format(circle.getArea()), df.format(circle.getPerimeter()), df.format(circle.getRadius()), df.format(circle.getDiameter()));
     }
 }

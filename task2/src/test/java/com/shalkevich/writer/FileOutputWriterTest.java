@@ -1,6 +1,6 @@
 package com.shalkevich.writer;
 
-import com.shalkevich.description.DescriptionServiceFactory;
+import com.shalkevich.description.CircleDescriptionService;
 import com.shalkevich.description.DescriptionService;
 import com.shalkevich.figures.Circle;
 import com.shalkevich.figures.Figure;
@@ -14,8 +14,16 @@ import java.nio.file.Paths;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+/**
+ * Тесты для FileOutputWriter.
+ */
 class FileOutputWriterTest {
 
+    /**
+     * Проверка записи вывода в файл.
+     *
+     * @throws IOException если происходит ошибка при записи в файл.
+     */
     @Test
     void testWriteOutputToFile() throws IOException {
         Figure circle = new Circle(5);
@@ -28,7 +36,7 @@ class FileOutputWriterTest {
             Files.createDirectories(outputDirPath);
         }
 
-        DescriptionService descriptionService = DescriptionServiceFactory.getDescriptionService(circle);
+        DescriptionService descriptionService = new CircleDescriptionService();
         String description = descriptionService.generateDescription(circle);
 
         writer.writeOutput(description);

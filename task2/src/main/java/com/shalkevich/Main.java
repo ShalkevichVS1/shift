@@ -1,6 +1,7 @@
 package com.shalkevich;
 
 import com.shalkevich.factory.FigureFactory;
+import com.shalkevich.description.DescriptionServiceFactory;
 import com.shalkevich.reader.FigureReader;
 import com.shalkevich.writer.OutputWriterFactory;
 import com.shalkevich.writer.OutputService;
@@ -31,7 +32,9 @@ public class Main {
         String inputFile = args[0];
         String outputMode = args.length > 1 ? args[1] : "console";
 
-        FigureReader reader = new FigureReader(new FigureFactory());
+        FigureFactory figureFactory = new FigureFactory();
+        DescriptionServiceFactory descriptionServiceFactory = new DescriptionServiceFactory();
+        FigureReader reader = new FigureReader(figureFactory, descriptionServiceFactory);
         OutputService writer = OutputWriterFactory.getOutputWriter(outputMode);
 
         try {

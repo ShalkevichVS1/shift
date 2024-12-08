@@ -2,17 +2,18 @@ package com.shalkevich.factory;
 
 import com.shalkevich.figures.Circle;
 import com.shalkevich.figures.Figure;
+import com.shalkevich.figures.FigureType;
 import com.shalkevich.figures.Rectangle;
 import com.shalkevich.figures.Triangle;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Проверка функциональности класса {@link FigureFactory}.
+ * Тесты для FigureFactory.
  */
 class FigureFactoryTest {
+
     private final FigureFactory factory = new FigureFactory();
 
     /**
@@ -20,10 +21,10 @@ class FigureFactoryTest {
      */
     @Test
     void testCreateCircle() {
-        Figure figure = factory.createFigure("CIRCLE", new String[]{"5"});
+        Figure figure = factory.createFigure(FigureType.CIRCLE, new String[]{"10"});
         assertEquals(Circle.class, figure.getClass());
         Circle circle = (Circle) figure;
-        assertEquals(5, circle.getRadius(), 0.01);
+        assertEquals(10, circle.getRadius());
     }
 
     /**
@@ -31,11 +32,11 @@ class FigureFactoryTest {
      */
     @Test
     void testCreateRectangle() {
-        Figure figure = factory.createFigure("RECTANGLE", new String[]{"4", "6"});
+        Figure figure = factory.createFigure(FigureType.RECTANGLE, new String[]{"20", "30"});
         assertEquals(Rectangle.class, figure.getClass());
         Rectangle rectangle = (Rectangle) figure;
-        assertEquals(4, rectangle.getLength(), 0.01);
-        assertEquals(6, rectangle.getWidth(), 0.01);
+        assertEquals(20, rectangle.getLength());
+        assertEquals(30, rectangle.getWidth());
     }
 
     /**
@@ -43,19 +44,27 @@ class FigureFactoryTest {
      */
     @Test
     void testCreateTriangle() {
-        Figure figure = factory.createFigure("TRIANGLE", new String[]{"3", "4", "5"});
+        Figure figure = factory.createFigure(FigureType.TRIANGLE, new String[]{"3", "4", "5"});
         assertEquals(Triangle.class, figure.getClass());
         Triangle triangle = (Triangle) figure;
-        assertEquals(3, triangle.getA(), 0.01);
-        assertEquals(4, triangle.getB(), 0.01);
-        assertEquals(5, triangle.getC(), 0.01);
+        assertEquals(3, triangle.getA());
+        assertEquals(4, triangle.getB());
+        assertEquals(5, triangle.getC());
     }
 
     /**
-     * Проверка создания фигуры с неизвестным типом.
+     * Проверка создания фигуры с некорректным типом.
      */
     @Test
-    void testUnknownFigureType() {
-        assertThrows(IllegalArgumentException.class, () -> factory.createFigure("UNKNOWN", new String[]{}));
+    void testCreateFigureWithInvalidType() {
+        assertThrows(IllegalArgumentException.class, () -> factory.createFigure(null, new String[]{"10"}));
+    }
+
+    /**
+     * Проверка создания фигуры с некорректными параметрами.
+     */
+    @Test
+    void testCreateFigureWithInvalidParameters() {
+        assertThrows(IllegalArgumentException.class, () -> factory.createFigure(FigureType.CIRCLE, new String[]{"10", "20"}));
     }
 }
