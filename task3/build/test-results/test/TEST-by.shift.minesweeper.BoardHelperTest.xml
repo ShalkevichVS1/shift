@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="by.shift.minesweeper.BoardHelperTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2024-12-07T17:35:55" hostname="LAPTOP-0VMO5VHI" time="0.465">
+  <properties/>
+  <testcase name="testToggleFlag_AlreadyRevealed()" classname="by.shift.minesweeper.BoardHelperTest" time="0.421"/>
+  <testcase name="testIsMineExploded_MineRevealed()" classname="by.shift.minesweeper.BoardHelperTest" time="0.003"/>
+  <testcase name="testIsMineExploded_MineNotRevealed()" classname="by.shift.minesweeper.BoardHelperTest" time="0.001"/>
+  <testcase name="testCheckWin_AllCellsRevealed()" classname="by.shift.minesweeper.BoardHelperTest" time="0.002"/>
+  <testcase name="testInitializeGame_CellsNotNull()" classname="by.shift.minesweeper.BoardHelperTest" time="0.002"/>
+  <testcase name="testRevealCell_RevealMine()" classname="by.shift.minesweeper.BoardHelperTest" time="0.002"/>
+  <testcase name="testToggleFlag_UnsetFlag()" classname="by.shift.minesweeper.BoardHelperTest" time="0.002"/>
+  <testcase name="testIsMineExploded_NoMine()" classname="by.shift.minesweeper.BoardHelperTest" time="0.001"/>
+  <testcase name="testInitializeGame_MinesCount()" classname="by.shift.minesweeper.BoardHelperTest" time="0.002"/>
+  <testcase name="testRevealCell_RevealAdjacent()" classname="by.shift.minesweeper.BoardHelperTest" time="0.001"/>
+  <testcase name="testRevealCell_RevealNonMine()" classname="by.shift.minesweeper.BoardHelperTest" time="0.001"/>
+  <testcase name="testToggleFlag_SetFlag()" classname="by.shift.minesweeper.BoardHelperTest" time="0.001"/>
+  <testcase name="testInitializeGame_AdjacentMinesCalculated()" classname="by.shift.minesweeper.BoardHelperTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

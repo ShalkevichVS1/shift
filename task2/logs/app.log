@@ -1,0 +1,243 @@
+2024-11-06 00:14:03 INFO  com.shalkevich.reader.FigureReader - FigureReader initialized with FigureFactory
+2024-11-06 00:14:03 INFO  com.shalkevich.reader.FigureReader - Figure type read: CIRCLE
+2024-11-06 00:14:03 INFO  com.shalkevich.factory.FigureFactory - Creating figure of type: CIRCLE
+2024-11-06 00:14:03 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-06 00:14:03 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-06 00:14:03 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-06 00:14:03 INFO  com.shalkevich.writer.OutputWriter - Output written to file: D:\shift\task2\src\main\java\com\shalkevich\output\апаппр2.txt
+2024-11-06 00:14:03 INFO  com.shalkevich.reader.FigureReader - Figure processed and output written
+2024-11-06 00:41:03 INFO  com.shalkevich.reader.FigureReader - FigureReader initialized with FigureFactory
+2024-11-06 00:41:03 INFO  com.shalkevich.reader.FigureReader - Figure type read: CIRCLE
+2024-11-06 00:41:03 INFO  com.shalkevich.factory.FigureFactory - Creating figure of type: CIRCLE
+2024-11-06 00:41:03 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-06 00:41:03 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-06 00:41:03 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-06 00:41:03 INFO  com.shalkevich.writer.OutputWriter - Output written to file: D:\shift\task2\src\main\java\com\shalkevich\output\апаппр2.txt
+2024-11-06 00:41:03 INFO  com.shalkevich.reader.FigureReader - Figure processed and output written
+2024-11-06 00:41:21 INFO  com.shalkevich.reader.FigureReader - FigureReader initialized with FigureFactory
+2024-11-06 00:41:21 INFO  com.shalkevich.reader.FigureReader - Figure type read: CIRCLE
+2024-11-06 00:41:21 INFO  com.shalkevich.factory.FigureFactory - Creating figure of type: CIRCLE
+2024-11-06 00:41:21 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-06 00:41:21 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-06 00:41:21 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-06 00:41:21 INFO  com.shalkevich.writer.OutputWriter - Output written to file: D:\shift\task2\src\main\java\com\shalkevich\output\апаппр3.txt
+2024-11-06 00:41:21 INFO  com.shalkevich.reader.FigureReader - Figure processed and output written
+2024-11-06 00:41:39 INFO  com.shalkevich.reader.FigureReader - FigureReader initialized with FigureFactory
+2024-11-06 00:41:39 INFO  com.shalkevich.reader.FigureReader - Figure type read: CIRCLE
+2024-11-06 00:41:39 INFO  com.shalkevich.factory.FigureFactory - Creating figure of type: CIRCLE
+2024-11-06 00:41:39 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-06 00:41:39 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-06 00:41:39 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-06 00:41:39 INFO  com.shalkevich.writer.OutputWriter - Output written to file: D:\shift\task2\src\main\java\com\shalkevich\output\апаппр4.txt
+2024-11-06 00:41:39 INFO  com.shalkevich.reader.FigureReader - Figure processed and output written
+2024-11-09 14:32:31 INFO  com.shalkevich.reader.FigureReader - FigureReader initialized with FigureFactory
+2024-11-09 14:32:31 INFO  com.shalkevich.reader.FigureReader - Figure type read: CIRCLE
+2024-11-09 14:32:31 INFO  com.shalkevich.factory.FigureFactory - Creating figure of type: CIRCLE
+2024-11-09 14:32:31 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-09 14:32:31 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-09 14:32:31 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-09 14:32:31 INFO  com.shalkevich.writer.OutputWriter - Output written to file: D:\shift\task2\src\main\java\com\shalkevich\output\апаппр5.txt
+2024-11-09 14:32:31 INFO  com.shalkevich.reader.FigureReader - Figure processed and output written
+2024-11-09 15:22:03 INFO  com.shalkevich.reader.FigureReader - FigureReader initialized with FigureFactory
+2024-11-09 15:22:03 INFO  com.shalkevich.reader.FigureReader - Figure type read: CIRCLE
+2024-11-09 15:22:03 INFO  com.shalkevich.factory.FigureFactory - Creating figure of type: CIRCLE
+2024-11-09 15:22:03 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-09 15:22:03 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-09 15:22:03 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-09 15:22:03 INFO  com.shalkevich.writer.OutputWriter - Output written to file: D:\shift\task2\src\main\java\com\shalkevich\output\апаппр7.txt
+2024-11-09 15:22:03 INFO  com.shalkevich.reader.FigureReader - Figure processed and output written
+2024-11-09 15:47:02 INFO  com.shalkevich.reader.FigureReader - FigureReader initialized with FigureFactory
+2024-11-09 15:47:02 ERROR com.shalkevich.reader.FigureReader - File not found: circle.txt
+2024-11-09 15:47:02 ERROR com.shalkevich.Main - Error processing figure: 
+java.lang.IllegalArgumentException: Файл не найден: circle.txt
+	at com.shalkevich.reader.FigureReader.readFigure(FigureReader.java:62)
+	at com.shalkevich.reader.FigureReader.readAndProcessFigure(FigureReader.java:46)
+	at com.shalkevich.Main.main(Main.java:37)
+2024-11-09 15:47:25 INFO  com.shalkevich.reader.FigureReader - FigureReader initialized with FigureFactory
+2024-11-09 15:47:25 ERROR com.shalkevich.reader.FigureReader - File not found: circle.txt
+2024-11-09 15:47:25 ERROR com.shalkevich.Main - Error processing figure: 
+java.lang.IllegalArgumentException: Файл не найден: circle.txt
+	at com.shalkevich.reader.FigureReader.readFigure(FigureReader.java:62)
+	at com.shalkevich.reader.FigureReader.readAndProcessFigure(FigureReader.java:46)
+	at com.shalkevich.Main.main(Main.java:37)
+2024-11-09 15:48:44 INFO  com.shalkevich.reader.FigureReader - FigureReader initialized with FigureFactory
+2024-11-09 15:48:44 INFO  com.shalkevich.reader.FigureReader - Figure type read: CIRCLE
+2024-11-09 15:48:44 INFO  com.shalkevich.factory.FigureFactory - Creating figure of type: CIRCLE
+2024-11-09 15:48:44 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-09 15:48:44 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-09 15:48:44 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-09 15:48:44 INFO  com.shalkevich.writer.OutputWriter - Output written to file: D:\shift\task2\src\main\java\com\shalkevich\output\апаппр8.txt
+2024-11-09 15:48:44 INFO  com.shalkevich.reader.FigureReader - Figure processed and output written
+2024-11-09 15:49:43 INFO  com.shalkevich.reader.FigureReader - FigureReader initialized with FigureFactory
+2024-11-09 15:49:43 INFO  com.shalkevich.reader.FigureReader - Figure type read: CIRCLE
+2024-11-09 15:49:43 INFO  com.shalkevich.factory.FigureFactory - Creating figure of type: CIRCLE
+2024-11-09 15:49:43 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-09 15:49:43 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-09 15:49:43 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-09 15:49:43 INFO  com.shalkevich.writer.OutputWriter - Output written to file: D:\shift\task2\src\main\java\com\shalkevich\output\апаппр8.txt
+2024-11-09 15:49:43 INFO  com.shalkevich.reader.FigureReader - Figure processed and output written
+2024-11-09 15:50:19 INFO  com.shalkevich.reader.FigureReader - FigureReader initialized with FigureFactory
+2024-11-09 15:50:19 INFO  com.shalkevich.reader.FigureReader - Figure type read: CIRCLE
+2024-11-09 15:50:19 INFO  com.shalkevich.factory.FigureFactory - Creating figure of type: CIRCLE
+2024-11-09 15:50:19 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-09 15:50:19 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-09 15:50:19 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-09 15:50:19 INFO  com.shalkevich.writer.OutputWriter - Output written to file: D:\shift\task2\src\main\java\com\shalkevich\output\апаппр9.txt
+2024-11-09 15:50:19 INFO  com.shalkevich.reader.FigureReader - Figure processed and output written
+2024-11-10 12:36:49 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-10 12:36:49 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-10 12:36:49 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-10 12:36:49 INFO  com.shalkevich.writer.OutputWriter - Output written to console
+2024-11-10 12:36:57 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-10 12:36:57 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-10 12:36:57 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-10 12:36:57 INFO  com.shalkevich.writer.OutputWriter - Output written to file: D:\shift\task2\task2\src\main\java\com\shalkevich\output\test_output.txt
+2024-11-10 12:37:57 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-10 12:37:57 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-10 12:37:57 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-10 12:39:45 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-10 12:39:45 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-10 12:39:45 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-10 12:39:45 INFO  com.shalkevich.writer.OutputWriter - Output written to file: D:\shift\task2\src\main\java\com\shalkevich\output\test_output.txt
+2024-11-10 12:40:01 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-10 12:40:01 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-10 12:40:01 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-10 12:40:01 INFO  com.shalkevich.writer.OutputWriter - Output written to file: D:\shift\task2\src\main\java\com\shalkevich\output\test_output.txt
+2024-11-10 12:40:25 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-10 12:40:25 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-10 12:40:25 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-10 12:40:25 INFO  com.shalkevich.writer.OutputWriter - Output written to file: D:\shift\task2\src\main\java\com\shalkevich\output\test_output.txt
+2024-11-10 12:40:34 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-10 12:40:34 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-10 12:40:34 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-10 12:40:34 INFO  com.shalkevich.writer.OutputWriter - Output written to file: D:\shift\task2\src\main\java\com\shalkevich\output\test_output.txt
+2024-11-10 12:45:46 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-10 12:45:46 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-10 12:45:46 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-10 12:46:11 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-10 12:46:11 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-10 12:46:11 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-10 12:46:34 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-10 12:46:34 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-10 12:46:34 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-10 12:47:59 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-10 12:47:59 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-10 12:47:59 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-10 12:47:59 INFO  com.shalkevich.writer.OutputWriter - Output written to file: task2\src\main\java\com\shalkevich\output\test_output.txt
+2024-11-10 12:49:08 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-10 12:49:08 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-10 12:49:08 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-10 12:49:08 INFO  com.shalkevich.writer.OutputWriter - Output written to file: task2\src\main\java\com\shalkevich\output\test_output.txt
+2024-11-10 12:49:17 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-10 12:49:17 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-10 12:49:17 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-10 12:49:17 INFO  com.shalkevich.writer.OutputWriter - Output written to file: task2\src\main\java\com\shalkevich\output\test_output.txt
+2024-11-10 12:49:53 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-10 12:49:53 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-10 12:49:53 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-10 12:57:55 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-10 12:57:55 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-10 12:57:55 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-10 12:58:06 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-10 12:58:06 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-10 12:58:06 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-10 12:58:55 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-10 12:58:55 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-10 12:58:55 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-10 12:58:55 INFO  com.shalkevich.writer.OutputWriter - Output written to file: task2\src\main\java\com\shalkevich\output\test_output.txt
+2024-11-10 13:00:21 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-10 13:00:21 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-10 13:00:21 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-10 13:00:21 INFO  com.shalkevich.writer.OutputWriter - Output written to file: task2\src\main\java\com\shalkevich\output\test_output.txt
+2024-11-10 13:01:49 INFO  com.shalkevich.reader.FigureReader - FigureReader initialized with FigureFactory
+2024-11-10 13:01:49 ERROR com.shalkevich.reader.FigureReader - File must contain at least two lines: invalid.txt
+2024-11-10 13:01:49 INFO  com.shalkevich.reader.FigureReader - FigureReader initialized with FigureFactory
+2024-11-10 13:01:49 INFO  com.shalkevich.reader.FigureReader - Figure type read: CIRCLE
+2024-11-10 13:01:49 INFO  com.shalkevich.factory.FigureFactory - Creating figure of type: CIRCLE
+2024-11-10 13:01:49 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-10 13:01:49 INFO  com.shalkevich.reader.FigureReader - FigureReader initialized with FigureFactory
+2024-11-10 13:01:49 ERROR com.shalkevich.reader.FigureReader - File not found: nonexistent.txt
+2024-11-10 13:01:49 INFO  com.shalkevich.reader.FigureReader - FigureReader initialized with FigureFactory
+2024-11-10 13:01:49 INFO  com.shalkevich.reader.FigureReader - Figure type read: CIRCLE
+2024-11-10 13:01:49 INFO  com.shalkevich.factory.FigureFactory - Creating figure of type: CIRCLE
+2024-11-10 13:01:49 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-10 13:01:49 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-10 13:01:49 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-10 13:01:49 INFO  com.shalkevich.writer.OutputWriter - Output written to console
+2024-11-10 13:01:49 INFO  com.shalkevich.reader.FigureReader - Figure processed and output written
+2024-11-10 13:01:57 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-10 13:01:57 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-10 13:01:57 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: Круг
+2024-11-10 13:01:57 INFO  com.shalkevich.writer.OutputWriter - Output written to console
+2024-11-11 19:52:35 INFO  com.shalkevich.reader.FigureReader - FigureReader initialized with FigureFactory
+2024-11-11 19:52:35 INFO  com.shalkevich.reader.FigureReader - Figure type read: CIRCLE
+2024-11-11 19:52:35 INFO  com.shalkevich.factory.FigureFactory - Creating figure of type: CIRCLE
+2024-11-11 19:52:35 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-11 19:52:35 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-11 19:52:36 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: РљСЂСѓРі
+2024-11-11 19:52:36 INFO  com.shalkevich.writer.OutputWriter - Output written to file: task2\src\main\java\com\shalkevich\output\апаппр12.txt
+2024-11-11 19:52:36 INFO  com.shalkevich.reader.FigureReader - Figure processed and output written
+2024-11-11 19:52:41 INFO  com.shalkevich.reader.FigureReader - FigureReader initialized with FigureFactory
+2024-11-11 19:52:41 INFO  com.shalkevich.reader.FigureReader - Figure type read: CIRCLE
+2024-11-11 19:52:41 INFO  com.shalkevich.factory.FigureFactory - Creating figure of type: CIRCLE
+2024-11-11 19:52:41 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-11 19:52:41 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-11 19:52:41 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: РљСЂСѓРі
+2024-11-11 19:52:41 INFO  com.shalkevich.writer.OutputWriter - Output written to file: task2\src\main\java\com\shalkevich\output\апаппр12.txt
+2024-11-11 19:52:41 INFO  com.shalkevich.reader.FigureReader - Figure processed and output written
+2024-11-11 19:53:36 INFO  com.shalkevich.reader.FigureReader - FigureReader initialized with FigureFactory
+2024-11-11 19:53:36 INFO  com.shalkevich.reader.FigureReader - Figure type read: CIRCLE
+2024-11-11 19:53:36 INFO  com.shalkevich.factory.FigureFactory - Creating figure of type: CIRCLE
+2024-11-11 19:53:36 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-11 19:53:36 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-11 19:53:36 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: РљСЂСѓРі
+2024-11-11 19:53:36 INFO  com.shalkevich.writer.OutputWriter - Output written to console
+2024-11-11 19:53:36 INFO  com.shalkevich.reader.FigureReader - Figure processed and output written
+2024-11-11 19:54:03 INFO  com.shalkevich.reader.FigureReader - FigureReader initialized with FigureFactory
+2024-11-11 19:54:03 INFO  com.shalkevich.reader.FigureReader - Figure type read: CIRCLE
+2024-11-11 19:54:03 INFO  com.shalkevich.factory.FigureFactory - Creating figure of type: CIRCLE
+2024-11-11 19:54:03 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-11 19:54:03 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-11 19:54:03 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: РљСЂСѓРі
+2024-11-11 19:54:03 INFO  com.shalkevich.writer.OutputWriter - Output written to console
+2024-11-11 19:54:03 INFO  com.shalkevich.reader.FigureReader - Figure processed and output written
+2024-11-11 19:55:33 INFO  com.shalkevich.reader.FigureReader - FigureReader initialized with FigureFactory
+2024-11-11 19:55:33 INFO  com.shalkevich.reader.FigureReader - Figure type read: CIRCLE
+2024-11-11 19:55:33 INFO  com.shalkevich.factory.FigureFactory - Creating figure of type: CIRCLE
+2024-11-11 19:55:33 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-11 19:55:33 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-11 19:55:33 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: РљСЂСѓРі
+2024-11-11 19:55:33 INFO  com.shalkevich.writer.OutputWriter - Output written to console
+2024-11-11 19:55:33 INFO  com.shalkevich.reader.FigureReader - Figure processed and output written
+2024-11-11 20:08:51 INFO  com.shalkevich.reader.FigureReader - FigureReader initialized with FigureFactory
+2024-11-11 20:08:51 INFO  com.shalkevich.reader.FigureReader - Figure type read: CIRCLE
+2024-11-11 20:08:51 INFO  com.shalkevich.factory.FigureFactory - Creating figure of type: CIRCLE
+2024-11-11 20:08:51 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-11 20:08:51 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-11 20:08:51 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: РљСЂСѓРі
+2024-11-11 20:08:51 INFO  com.shalkevich.writer.OutputWriter - Output written to console
+2024-11-11 20:08:51 INFO  com.shalkevich.reader.FigureReader - Figure processed and output written
+2024-11-11 20:11:10 INFO  com.shalkevich.reader.FigureReader - FigureReader initialized with FigureFactory
+2024-11-11 20:11:10 INFO  com.shalkevich.reader.FigureReader - Figure type read: CIRCLE
+2024-11-11 20:11:10 INFO  com.shalkevich.factory.FigureFactory - Creating figure of type: CIRCLE
+2024-11-11 20:11:10 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-11 20:11:10 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-11 20:11:10 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: РљСЂСѓРі
+2024-11-11 20:11:10 INFO  com.shalkevich.writer.OutputWriter - Output written to console
+2024-11-11 20:11:10 INFO  com.shalkevich.reader.FigureReader - Figure processed and output written
+2024-11-30 21:58:15 INFO  com.shalkevich.reader.FigureReader - FigureReader initialized with FigureFactory
+2024-11-30 21:58:15 INFO  com.shalkevich.reader.FigureReader - Figure type read: CIRCLE
+2024-11-30 21:58:15 INFO  com.shalkevich.factory.FigureFactory - Creating figure of type: CIRCLE
+2024-11-30 21:58:15 INFO  com.shalkevich.figures.Circle - Circle created with radius: 5.0
+2024-11-30 21:58:15 INFO  com.shalkevich.figures.Circle - Getting specific characteristics for Circle
+2024-11-30 21:58:15 INFO  com.shalkevich.writer.OutputWriter - Writing output for figure: РљСЂСѓРі
+2024-11-30 21:58:15 INFO  com.shalkevich.writer.OutputWriter - Output written to console
+2024-11-30 21:58:15 INFO  com.shalkevich.reader.FigureReader - Figure processed and output written
+2024-12-02 18:17:34 INFO  com.shalkevich.reader.FigureReader - FigureReader initialized with FigureFactory
+2024-12-02 18:17:34 INFO  com.shalkevich.reader.FigureReader - Figure type read: TRIANGLE
+2024-12-02 18:17:34 INFO  c.shalkevich.writer.FileOutputWriter - Output written to file: task2\src\main\java\com\shalkevich\output\output.txt
+2024-12-02 18:17:34 INFO  com.shalkevich.reader.FigureReader - Figure processed and output written
+2024-12-07 21:37:35 INFO  com.shalkevich.reader.FigureReader - FigureReader initialized with FigureFactory
+2024-12-07 21:37:35 INFO  com.shalkevich.reader.FigureReader - Figure type read: RECTANGLE
+2024-12-07 21:37:35 INFO  c.shalkevich.writer.FileOutputWriter - Output written to file: task2\src\main\java\com\shalkevich\output\output.txt
+2024-12-07 21:37:35 INFO  com.shalkevich.reader.FigureReader - Figure processed and output written
