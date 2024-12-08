@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/task2/README.md" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task2/build.gradle" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task2/src/main/java/com/shalkevich/Main.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task2/src/main/java/com/shalkevich/description/CircleDescriptionService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task2/src/main/java/com/shalkevich/description/DescriptionService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task2/src/main/java/com/shalkevich/description/DescriptionServiceFactory.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task2/src/main/java/com/shalkevich/description/FigureDescriptionService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task2/src/main/java/com/shalkevich/description/RectangleDescriptionService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task2/src/main/java/com/shalkevich/description/TriangleDescriptionService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task2/src/main/java/com/shalkevich/output/апаппр.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/task2/src/main/java/com/shalkevich/output/апаппр1.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/task2/src/main/java/com/shalkevich/output/апаппр2.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/task2/src/main/java/com/shalkevich/writer/ConsoleOutputWriter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task2/src/main/java/com/shalkevich/writer/FileOutputWriter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task2/src/main/java/com/shalkevich/writer/OutputService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task2/src/main/java/com/shalkevich/writer/OutputWriterFactory.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task2/src/test/java/com/shalkevich/description/DescriptionServiceFactoryTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task2/src/test/java/com/shalkevich/description/DescriptionServiceFactoryTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task2/src/test/java/com/shalkevich/factory/FigureFactoryTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task2/src/test/java/com/shalkevich/factory/FigureFactoryTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task2/src/test/java/com/shalkevich/factory/FigureFactoryTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task2/src/test/java/com/shalkevich/writer/ConsoleOutputWriterTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task2/src/test/java/com/shalkevich/writer/ConsoleOutputWriterTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task2/src/test/java/com/shalkevich/writer/ConsoleOutputWriterTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task2/src/test/java/com/shalkevich/writer/FileOutputWriterTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task2/src/test/java/com/shalkevich/writer/FileOutputWriterTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task2/src/test/java/com/shalkevich/writer/FileOutputWriterTest.java" charset="UTF-8" />
     <file url="PROJECT" charset="windows-1251" />
   </component>
 </project>
