@@ -78,4 +78,14 @@ public class Triangle implements Figure {
     public double getC() {
         return c;
     }
+
+    /**
+     * Возвращает тип фигуры.
+     *
+     * @return Тип фигуры.
+     */
+    @Override
+    public FigureType getFigureType() {
+        return FigureType.TRIANGLE;
+    }
 }

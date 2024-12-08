@@ -16,10 +16,9 @@ import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.util.List;
 import java.util.Locale;
-import java.util.stream.Collectors;
 
 /**
- * Чтение данных фигур из файлов и их обработка.
+ * Класс для чтения данных фигур из файлов и их обработки.
  */
 public class FigureReader {
 

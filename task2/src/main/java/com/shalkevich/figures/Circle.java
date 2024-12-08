@@ -62,4 +62,14 @@ public class Circle implements Figure {
     public double getDiameter() {
         return 2 * radius;
     }
+
+    /**
+     * Возвращает тип фигуры.
+     *
+     * @return Тип фигуры.
+     */
+    @Override
+    public FigureType getFigureType() {
+        return FigureType.CIRCLE;
+    }
 }

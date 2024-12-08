@@ -74,4 +74,14 @@ public class Rectangle implements Figure {
     public double getDiagonal() {
         return Math.sqrt(length * length + width * width);
     }
+
+    /**
+     * Возвращает тип фигуры.
+     *
+     * @return Тип фигуры.
+     */
+    @Override
+    public FigureType getFigureType() {
+        return FigureType.RECTANGLE;
+    }
 }

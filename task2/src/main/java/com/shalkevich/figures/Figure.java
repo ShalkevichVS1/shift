@@ -25,4 +25,11 @@ public interface Figure {
      * @return Периметр фигуры.
      */
     double getPerimeter();
+
+    /**
+     * Возвращает тип фигуры.
+     *
+     * @return Тип фигуры.
+     */
+    FigureType getFigureType();
 }
