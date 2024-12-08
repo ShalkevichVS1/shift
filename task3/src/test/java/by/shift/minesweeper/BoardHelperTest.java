@@ -222,17 +222,18 @@ class BoardHelperTest {
      * Тест проверяет, что игрок выигрывает, если все ячейки, не содержащие мину, были раскрыты.
      */
     @Test
-    void testCheckWin_AllCellsRevealed() {
+    void testCheckWin_AllMinesFlagged() {
         boardHelper.initializeGame(game);
         for (int row = 0; row < game.getRows(); row++) {
             for (int col = 0; col < game.getCols(); col++) {
                 Cell cell = game.getCell(row, col);
-                if (!cell.isMine()) {
-                    cell.setRevealed(true);
+                if (cell.isMine()) {
+                    cell.setFlagged(true);
                 }
             }
         }
         boolean result = boardHelper.checkWin(game);
-        assertTrue(result, "Player should win the game");
+        assertTrue(result, "Player should win the game when all mines are flagged");
     }
+
 }

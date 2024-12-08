@@ -195,7 +195,8 @@ public class BoardHelper {
     public boolean checkWin(Game game) {
         for (int row = 0; row < game.getRows(); row++) {
             for (int col = 0; col < game.getCols(); col++) {
-                if (!game.getCell(row, col).isRevealed() && !game.getCell(row, col).isMine()) {
+                Cell cell = game.getCell(row, col);
+                if (cell.isMine() && !cell.isFlagged()) {
                     return false;
                 }
             }
