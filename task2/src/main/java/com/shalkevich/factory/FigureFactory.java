@@ -22,20 +22,21 @@ public class FigureFactory {
         if (type == null) {
             throw new IllegalArgumentException("Figure type cannot be null");
         }
-        switch (type) {
-            case CIRCLE:
+        return switch (type) {
+            case CIRCLE -> {
                 if (params.length != 1) throw new IllegalArgumentException("Invalid number of parameters for CIRCLE.");
-                return new Circle(Double.parseDouble(params[0]));
-            case RECTANGLE:
+                yield new Circle(Double.parseDouble(params[0]));
+            }
+            case RECTANGLE -> {
                 if (params.length != 2)
                     throw new IllegalArgumentException("Invalid number of parameters for RECTANGLE.");
-                return new Rectangle(Double.parseDouble(params[0]), Double.parseDouble(params[1]));
-            case TRIANGLE:
+                yield new Rectangle(Double.parseDouble(params[0]), Double.parseDouble(params[1]));
+            }
+            case TRIANGLE -> {
                 if (params.length != 3)
                     throw new IllegalArgumentException("Invalid number of parameters for TRIANGLE.");
-                return new Triangle(Double.parseDouble(params[0]), Double.parseDouble(params[1]), Double.parseDouble(params[2]));
-            default:
-                throw new IllegalArgumentException("Unknown figure type: " + type);
-        }
+                yield new Triangle(Double.parseDouble(params[0]), Double.parseDouble(params[1]), Double.parseDouble(params[2]));
+            }
+        };
     }
 }

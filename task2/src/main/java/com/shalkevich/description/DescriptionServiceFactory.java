@@ -17,15 +17,10 @@ public class DescriptionServiceFactory {
         if (type == null) {
             throw new IllegalArgumentException("Figure type cannot be null");
         }
-        switch (type) {
-            case CIRCLE:
-                return new CircleDescriptionService();
-            case RECTANGLE:
-                return new RectangleDescriptionService();
-            case TRIANGLE:
-                return new TriangleDescriptionService();
-            default:
-                throw new IllegalArgumentException("Unknown figure type: " + type);
-        }
+        return switch (type) {
+            case CIRCLE -> new CircleDescriptionService();
+            case RECTANGLE -> new RectangleDescriptionService();
+            case TRIANGLE -> new TriangleDescriptionService();
+        };
     }
 }
