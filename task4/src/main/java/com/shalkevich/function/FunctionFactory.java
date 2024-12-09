@@ -15,18 +15,15 @@ public class FunctionFactory {
      * @return Стратегия функции.
      */
     public static FunctionStrategy getFunctionStrategy(int functionChoice) {
-        switch (functionChoice) {
-            case 1:
-                return new ExponentialDecayFunction();
-            case 2:
-                return new InverseSquareFunction();
-            case 3:
-                return new InverseProductFunction();
-            case 4:
-                return new HarmonicFunction();
-            default:
+        return switch (functionChoice) {
+            case 1 -> new ExponentialDecayFunction();
+            case 2 -> new InverseSquareFunction();
+            case 3 -> new InverseProductFunction();
+            case 4 -> new HarmonicFunction();
+            default -> {
                 log.error("Недопустимый выбор функции.");
                 throw new IllegalArgumentException("Недопустимый выбор функции");
-        }
+            }
+        };
     }
 }
