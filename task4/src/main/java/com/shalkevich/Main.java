@@ -1,22 +1,22 @@
 package com.shalkevich;
 
-import com.shalkevich.service.CalculationService;
+import com.shalkevich.ui.UserInterface;
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.Scanner;
-
+/**
+ * РўРѕС‡РєР° РІС…РѕРґР° РІ РїСЂРёР»РѕР¶РµРЅРёРµ.
+ */
 @Slf4j
 public class Main {
 
+    /**
+     * РўРѕС‡РєР° РІС…РѕРґР° РІ РїСЂРѕРіСЂР°РјРјСѓ.
+     *
+     * @param args РђСЂРіСѓРјРµРЅС‚С‹ РєРѕРјР°РЅРґРЅРѕР№ СЃС‚СЂРѕРєРё.
+     */
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        log.info("Введите значение N: ");
-        int n = scanner.nextInt();
-        log.info("Начало вычислений для N = {}", n);
-
-        CalculationService calculationService = new CalculationService();
-        double result = calculationService.calculateSum(n);
-
-        log.info("Сумма значений: {}", result);
+        UserInterface ui = new UserInterface();
+        ui.start();
+        ui.close();
     }
 }

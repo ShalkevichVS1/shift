@@ -18,16 +18,20 @@
     <file url="file://$PROJECT_DIR$/task2/src/main/java/com/shalkevich/writer/OutputService.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/task2/src/main/java/com/shalkevich/writer/OutputWriterFactory.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/task2/src/test/java/com/shalkevich/description/DescriptionServiceFactoryTest.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/task2/src/test/java/com/shalkevich/description/DescriptionServiceFactoryTest.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/task2/src/test/java/com/shalkevich/factory/FigureFactoryTest.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/task2/src/test/java/com/shalkevich/factory/FigureFactoryTest.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/task2/src/test/java/com/shalkevich/factory/FigureFactoryTest.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/task2/src/test/java/com/shalkevich/writer/ConsoleOutputWriterTest.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/task2/src/test/java/com/shalkevich/writer/ConsoleOutputWriterTest.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/task2/src/test/java/com/shalkevich/writer/ConsoleOutputWriterTest.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/task2/src/test/java/com/shalkevich/writer/FileOutputWriterTest.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/task2/src/test/java/com/shalkevich/writer/FileOutputWriterTest.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/task2/src/test/java/com/shalkevich/writer/FileOutputWriterTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task4/src/main/java/com/shalkevich/Main.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task4/src/main/java/com/shalkevich/function/ExponentialDecayFunction.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task4/src/main/java/com/shalkevich/function/FunctionFactory.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task4/src/main/java/com/shalkevich/function/FunctionStrategy.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task4/src/main/java/com/shalkevich/function/HarmonicFunction.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task4/src/main/java/com/shalkevich/function/InverseProductFunction.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task4/src/main/java/com/shalkevich/function/InverseSquareFunction.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task4/src/main/java/com/shalkevich/model/Task.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task4/src/main/java/com/shalkevich/service/CalculationService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task4/src/main/java/com/shalkevich/service/TaskExecutor.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/task4/src/main/java/com/shalkevich/ui/UserInterface.java" charset="UTF-8" />
     <file url="PROJECT" charset="windows-1251" />
   </component>
 </project>

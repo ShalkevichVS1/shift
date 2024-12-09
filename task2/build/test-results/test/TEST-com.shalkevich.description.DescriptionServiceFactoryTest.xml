@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.shalkevich.description.DescriptionServiceFactoryTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-12-08T22:46:50" hostname="LAPTOP-0VMO5VHI" time="0.033">
+  <properties/>
+  <testcase name="testGetDescriptionServiceWithInvalidType()" classname="com.shalkevich.description.DescriptionServiceFactoryTest" time="0.023"/>
+  <testcase name="testGetDescriptionServiceForCircle()" classname="com.shalkevich.description.DescriptionServiceFactoryTest" time="0.004"/>
+  <testcase name="testGetDescriptionServiceForRectangle()" classname="com.shalkevich.description.DescriptionServiceFactoryTest" time="0.002"/>
+  <testcase name="testGetDescriptionServiceForTriangle()" classname="com.shalkevich.description.DescriptionServiceFactoryTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
