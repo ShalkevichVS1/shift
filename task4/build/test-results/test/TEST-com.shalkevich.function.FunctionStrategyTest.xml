@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.shalkevich.function.FunctionStrategyTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-12-09T15:00:18" hostname="LAPTOP-0VMO5VHI" time="0.007">
+  <properties/>
+  <testcase name="testHarmonicFunction()" classname="com.shalkevich.function.FunctionStrategyTest" time="0.001"/>
+  <testcase name="testInverseSquareFunction()" classname="com.shalkevich.function.FunctionStrategyTest" time="0.001"/>
+  <testcase name="testExponentialDecayFunction()" classname="com.shalkevich.function.FunctionStrategyTest" time="0.001"/>
+  <testcase name="testFunctionFactory()" classname="com.shalkevich.function.FunctionStrategyTest" time="0.003"/>
+  <testcase name="testInverseProductFunction()" classname="com.shalkevich.function.FunctionStrategyTest" time="0.0"/>
+  <system-out><![CDATA[2024-12-09T18:00:18.487+03:00 ERROR [Test worker] c.s.function.FunctionFactory : Недопустимый выбор функции.
+2024-12-09T18:00:18.488+03:00 ERROR [Test worker] c.s.function.FunctionFactory : Недопустимый выбор функции.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

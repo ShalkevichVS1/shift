@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6ae156f3-77a0-4d66-b96c-f14b2b373484" name="Changes" comment="I'm sorry! Forgot &#10;GameServiceTest tweak( Everything should be fine now!" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="minesweeper" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$/.." source="master" />
+              </list>
+            </value>
+          </entry>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$/.." source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$/.." source="feature/task3" />
+              </list>
+            </value>
+          </entry>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$/.." source="origin/feature/task2" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="feature/task3" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ShalkevichVS1&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ShalkevichVS1/shift.git&quot;,
+    &quot;accountId&quot;: &quot;460dcc87-949c-4562-8ba2-8cc3b583ec58&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/test/java/BoardHelperTest.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2oD9Gl9SJozKsSwcEbdJjbq6Ppu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.BoardHelperTest (1).executor": "Run",
+    "Gradle.BoardHelperTest.executor": "Run",
+    "Gradle.BoardHelperTest.testCheckWin_AllMinesFlagged.executor": "Run",
+    "Gradle.BoardHelperTest.testToggleFlag_UnsetFlag.executor": "Run",
+    "Gradle.Build mineswipper.executor": "Run",
+    "Gradle.Build task3.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.GameServiceTest (1).executor": "Run",
+    "Gradle.GameServiceTest.executor": "Run",
+    "Gradle.GameServiceTest.testCheckWin_WithWin.executor": "Run",
+    "Gradle.GameServiceTest.testCreateNewGame (1).executor": "Run",
+    "Gradle.GameServiceTest.testCreateNewGame.executor": "Run",
+    "Gradle.GameServiceTest.testCreateNewGameWithLargeBoard.executor": "Run",
+    "Gradle.GameServiceTest.testCreateNewGameWithZeroMines.executor": "Run",
+    "Gradle.GameServiceTest.testRevealCell.executor": "Run",
+    "Gradle.GameServiceTest.testRevealCell_GameNotFound.executor": "Run",
+    "Gradle.GameServiceTest.testRevealCell_GameOver.executor": "Run",
+    "Gradle.GameServiceTest.testRevealCell_MineExploded.executor": "Run",
+    "Gradle.GameServiceTest.testRevealCell_NoMine.executor": "Run",
+    "Gradle.GameServiceTest.testRevealCell_NormalReveal.executor": "Run",
+    "Gradle.GameServiceTest.testRevealCell_PlayerWins.executor": "Run",
+    "Gradle.GameServiceTest.testRevealCell_WinCondition.executor": "Run",
+    "Gradle.GameServiceTest.testRevealCell_winCondition.executor": "Run",
+    "Gradle.GameServiceTest.testToggleFlag.executor": "Run",
+    "Gradle.GameServiceTest.testWinMessage.executor": "Debug",
+    "Gradle.Tests in 'minesweeper.by.shift.minesweeper.test'.executor": "Run",
+    "Gradle.Tests in 'minesweeper.test'.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelOrder2": "2",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RequestMappingsPanelWidth2": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.MinesweeperApplication.executor": "Run",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "#4 on feature/task3",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/shift/task4",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Gradle.Tests in 'minesweeper.by.shift.minesweeper.test'">
+    <configuration name="BoardHelperTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;by.shift.minesweeper.BoardHelperTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="GameServiceTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;by.shift.minesweeper.GameServiceTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="GameServiceTest.testCheckWin_WithWin" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;by.shift.minesweeper.GameServiceTest.testCheckWin_WithWin&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="GameServiceTest.testWinMessage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;by.shift.minesweeper.GameServiceTest.testWinMessage&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'minesweeper.by.shift.minesweeper.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MinesweeperApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="minesweeper.by.shift.minesweeper.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="by.shift.minesweeper.MinesweeperApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Tests in 'minesweeper.by.shift.minesweeper.test'" />
+        <item itemvalue="Gradle.GameServiceTest.testCheckWin_WithWin" />
+        <item itemvalue="Gradle.GameServiceTest.testWinMessage" />
+        <item itemvalue="Gradle.GameServiceTest (1)" />
+        <item itemvalue="Gradle.BoardHelperTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ae156f3-77a0-4d66-b96c-f14b2b373484" name="Changes" comment="" />
+      <created>1730393186206</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730393186206</updated>
+      <workItem from="1730393187919" duration="3308000" />
+      <workItem from="1732271125944" duration="1397000" />
+      <workItem from="1732363084202" duration="3427000" />
+      <workItem from="1732371327810" duration="4464000" />
+      <workItem from="1732534864856" duration="25830000" />
+      <workItem from="1732809811501" duration="45000" />
+      <workItem from="1732978289688" duration="3391000" />
+      <workItem from="1732996449395" duration="35000" />
+      <workItem from="1732999331812" duration="274000" />
+      <workItem from="1732999992415" duration="799000" />
+      <workItem from="1733159701883" duration="29231000" />
+      <workItem from="1733403516022" duration="18231000" />
+      <workItem from="1733432087080" duration="7864000" />
+      <workItem from="1733576706016" duration="1221000" />
+      <workItem from="1733589562383" duration="4252000" />
+      <workItem from="1733698468333" duration="163000" />
+      <workItem from="1733698766484" duration="901000" />
+      <workItem from="1733699751786" duration="1086000" />
+      <workItem from="1733738900057" duration="944000" />
+    </task>
+    <task id="LOCAL-00001" summary="checking the commit">
+      <option name="closed" value="true" />
+      <created>1733000100241</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733000100241</updated>
+    </task>
+    <task id="LOCAL-00002" summary="I fixed everything and did the tests">
+      <option name="closed" value="true" />
+      <created>1733429203063</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733429203063</updated>
+    </task>
+    <task id="LOCAL-00003" summary="I fixed everything and did the tests">
+      <option name="closed" value="true" />
+      <created>1733593729097</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733593729097</updated>
+    </task>
+    <task id="LOCAL-00004" summary="I've tweaked the logic and the test!">
+      <option name="closed" value="true" />
+      <created>1733700800883</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733700800883</updated>
+    </task>
+    <task id="LOCAL-00005" summary="I'm sorry! Forgot &#10;GameServiceTest tweak( Everything should be fine now!">
+      <option name="closed" value="true" />
+      <created>1733739771891</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733739771891</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/feature/task3" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="checking the commit" />
+    <MESSAGE value="I fixed everything and did the tests" />
+    <MESSAGE value="I've tweaked the logic and the test!" />
+    <MESSAGE value="I'm sorry! Forgot &#10;GameServiceTest tweak( Everything should be fine now!" />
+    <option name="LAST_COMMIT_MESSAGE" value="I'm sorry! Forgot &#10;GameServiceTest tweak( Everything should be fine now!" />
+  </component>
+</project>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.shalkevich.model.TaskTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-09T15:00:18" hostname="LAPTOP-0VMO5VHI" time="0.002">
+  <properties/>
+  <testcase name="testCalculate()" classname="com.shalkevich.model.TaskTest" time="0.002"/>
+  <system-out><![CDATA[2024-12-09T18:00:18.492+03:00 DEBUG [Test worker] com.shalkevich.model.Task : Начало вычислений для диапазона: 0 - 10
+2024-12-09T18:00:18.493+03:00 DEBUG [Test worker] com.shalkevich.model.Task : Шаг 0: значение 1.0
+2024-12-09T18:00:18.493+03:00 DEBUG [Test worker] com.shalkevich.model.Task : Шаг 1: значение 0.5
+2024-12-09T18:00:18.493+03:00 DEBUG [Test worker] com.shalkevich.model.Task : Шаг 2: значение 0.25
+2024-12-09T18:00:18.493+03:00 DEBUG [Test worker] com.shalkevich.model.Task : Шаг 3: значение 0.125
+2024-12-09T18:00:18.493+03:00 DEBUG [Test worker] com.shalkevich.model.Task : Шаг 4: значение 0.0625
+2024-12-09T18:00:18.493+03:00 DEBUG [Test worker] com.shalkevich.model.Task : Шаг 5: значение 0.03125
+2024-12-09T18:00:18.493+03:00 DEBUG [Test worker] com.shalkevich.model.Task : Шаг 6: значение 0.015625
+2024-12-09T18:00:18.493+03:00 DEBUG [Test worker] com.shalkevich.model.Task : Шаг 7: значение 0.0078125
+2024-12-09T18:00:18.494+03:00 DEBUG [Test worker] com.shalkevich.model.Task : Шаг 8: значение 0.00390625
+2024-12-09T18:00:18.494+03:00 DEBUG [Test worker] com.shalkevich.model.Task : Шаг 9: значение 0.001953125
+2024-12-09T18:00:18.494+03:00 DEBUG [Test worker] com.shalkevich.model.Task : Шаг 10: значение 9.765625E-4
+2024-12-09T18:00:18.494+03:00 DEBUG [Test worker] com.shalkevich.model.Task : Вычисления завершены для диапазона: 0 - 10, результат: 1.9990234375
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
