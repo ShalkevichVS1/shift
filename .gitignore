@@ -1,4 +1,4 @@
-# IntelliJ IDEA specific files
+.gradle/
 .idea/
 *.iml
 
