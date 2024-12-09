@@ -90,18 +90,39 @@ class GameServiceTest {
 
     @Test
     void testCheckWin_WithWin() {
-        // Сделаем все ячейки, кроме мин, раскрытыми, чтобы проверить победу
+        // Пометим все мины флагами, чтобы проверить победу
         for (int row = 0; row < game.getRows(); row++) {
             for (int col = 0; col < game.getCols(); col++) {
-                if (!game.getCell(row, col).isMine()) {
-                    game.getCell(row, col).setRevealed(true);
+                if (game.getCell(row, col).isMine()) {
+                    gameService.toggleFlag(UUID.fromString(game.getId()), row, col);
                 }
             }
         }
 
-        Game updatedGame = gameService.revealCell(UUID.fromString(game.getId()), 0, 0);
-        assertTrue(updatedGame.isWin());
-        assertTrue(updatedGame.isGameOver());
+        Game updatedGame = gameService.revealCell(UUID.fromString(game.getId()), 0, 0); // Раскрываем любую ячейку
+        assertTrue(updatedGame.isWin(), "Игра должна быть выиграна, когда все мины помечены флагами");
+        assertTrue(updatedGame.isGameOver(), "Игра должна быть завершена");
+    }
+
+
+    @Test
+    void testCheckWin_AllMinesFlagged() {
+        // Инициализируем игру
+        Game game = gameService.createNewGame(5, 5, 5);
+        UUID gameId = UUID.fromString(game.getId());
+
+        // Помечаем все мины флагами
+        for (int row = 0; row < game.getRows(); row++) {
+            for (int col = 0; col < game.getCols(); col++) {
+                if (game.getCell(row, col).isMine()) {
+                    gameService.toggleFlag(gameId, row, col);
+                }
+            }
+        }
+
+        Game updatedGame = gameService.revealCell(gameId, 0, 0);
+        assertTrue(updatedGame.isWin(), "Игра должна быть выиграна, когда все мины помечены флагами");
+        assertTrue(updatedGame.isGameOver(), "Игра должна быть завершена");
     }
 
     @Test
@@ -109,39 +130,25 @@ class GameServiceTest {
         // Проверяем, что сообщение о конце игры появляется при проигрыше
         game.getCell(0, 0).setMine(true);
         gameService.revealCell(UUID.fromString(game.getId()), 0, 0);
-        // Мы не можем проверить вывод в консоль непосредственно, но можно проверить статус игры
         assertTrue(game.isGameOver());
     }
 
     @Test
     void testWinMessage() {
         // Убедимся, что сообщение о победе появляется при выигрыше
-        // Например, раскрываем все ячейки без мин
+        // Например, помечаем все мины флагами
         for (int row = 0; row < game.getRows(); row++) {
             for (int col = 0; col < game.getCols(); col++) {
-                if (!game.getCell(row, col).isMine()) {
-                    game.getCell(row, col).setRevealed(true);
+                if (game.getCell(row, col).isMine()) {
+                    gameService.toggleFlag(UUID.fromString(game.getId()), row, col);
                 }
             }
         }
 
-        // Дополнительно раскрываем все ячейки, чтобы подтвердить, что тест работает правильно
-        for (int row = 0; row < game.getRows(); row++) {
-            for (int col = 0; col < game.getCols(); col++) {
-                if (!game.getCell(row, col).isMine()) {
-                    gameService.revealCell(UUID.fromString(game.getId()), row, col);
-                }
-            }
-        }
-
-        // Теперь проверяем, вызовет ли этот вызов состояния победы
         Game updatedGame = gameService.revealCell(UUID.fromString(game.getId()), 0, 0);
-
-        // Проверяем, что игра выиграна
         assertTrue(updatedGame.isWin(), "Игра должна быть выиграна");
         assertTrue(updatedGame.isGameOver(), "Игра должна быть завершена");
     }
-
 
 }
 
