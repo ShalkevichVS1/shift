@@ -39,15 +39,15 @@ public class MessageHandler {
     /**
      * Обрабатывает обычное сообщение чата.
      *
-     * @param session     текущая сессия WebSocket.
      * @param chatMessage сообщение чата.
      * @throws Exception если возникает ошибка при обработке сообщения.
      */
-    public void handleChatMessage(WebSocketSession session, Message chatMessage) throws Exception {
+    public void handleChatMessage(Message chatMessage) throws Exception {
         chatMessage.setDate(LocalDateTime.now());
         messageRepository.saveMessage(chatMessage);
         broadcastMessage(chatMessage);
     }
+
 
     /**
      * Обрабатывает сообщение о выходе пользователя.

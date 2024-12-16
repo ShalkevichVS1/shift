@@ -1,6 +1,5 @@
 package com.shalkevich.sockerserver.websoket;
 
-import lombok.Data;
 import lombok.Getter;
 import org.springframework.web.socket.WebSocketSession;
 

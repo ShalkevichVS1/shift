@@ -49,7 +49,7 @@ public class ChatWebSocketHandler extends TextWebSocketHandler {
             messageHandler.handleJoinMessage(session, username);
         } else {
             Message chatMessage = objectMapper.convertValue(messageMap, Message.class);
-            messageHandler.handleChatMessage(session, chatMessage);
+            messageHandler.handleChatMessage(chatMessage);
         }
     }
 
