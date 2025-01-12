@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.shalkevich.writer.ConsoleOutputWriterTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-07T20:11:36" hostname="LAPTOP-0VMO5VHI" time="0.224">
+  <properties/>
+  <testcase name="testWriteOutputToConsole()" classname="com.shalkevich.writer.ConsoleOutputWriterTest" time="0.224"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
