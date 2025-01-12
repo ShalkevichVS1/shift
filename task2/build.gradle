@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group 'com.shalkevich'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+dependencies {
+    implementation 'org.slf4j:slf4j-api:1.7.32'
+    implementation 'ch.qos.logback:logback-classic:1.5.6'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation 'org.slf4j:slf4j-api:1.7.30'
+    implementation 'ch.qos.logback:logback-classic:1.2.11'
+    testImplementation 'org.mockito:mockito-core:5.0.0'
+    testImplementation 'org.mockito:mockito-junit-jupiter:5.0.0'
+}
+
+test {
+    useJUnitPlatform()
+}

@@ -1,0 +1,24 @@
+# IntelliJ IDEA specific files
+.idea/
+*.iml
+
+# Maven/Gradle specific files
+target/
+build/
+.gradle
+
+# Compiled files
+*.class
+*.jar
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+hs_err_pid*
+
+# Environment variables
+.env
+
+# Personal settings
+.settings/

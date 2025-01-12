@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.shalkevich.service.TaskExecutorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-12-09T15:00:18" hostname="LAPTOP-0VMO5VHI" time="0.007">
+  <properties/>
+  <testcase name="testCreateTasks()" classname="com.shalkevich.service.TaskExecutorTest" time="0.002"/>
+  <testcase name="testExecuteTasks()" classname="com.shalkevich.service.TaskExecutorTest" time="0.005"/>
+  <system-out><![CDATA[2024-12-09T18:00:18.473+03:00 DEBUG [Test worker] com.shalkevich.service.TaskExecutor : Создание задач для N = 10
+2024-12-09T18:00:18.473+03:00 DEBUG [Test worker] com.shalkevich.service.TaskExecutor : Создана задача для диапазона: 0 - 2
+2024-12-09T18:00:18.473+03:00 DEBUG [Test worker] com.shalkevich.service.TaskExecutor : Создана задача для диапазона: 3 - 5
+2024-12-09T18:00:18.474+03:00 DEBUG [Test worker] com.shalkevich.service.TaskExecutor : Создана задача для диапазона: 6 - 8
+2024-12-09T18:00:18.474+03:00 DEBUG [Test worker] com.shalkevich.service.TaskExecutor : Создана задача для диапазона: 9 - 9
+2024-12-09T18:00:18.475+03:00 DEBUG [Test worker] com.shalkevich.service.TaskExecutor : Создание задач для N = 10
+2024-12-09T18:00:18.476+03:00 DEBUG [Test worker] com.shalkevich.service.TaskExecutor : Создана задача для диапазона: 0 - 2
+2024-12-09T18:00:18.476+03:00 DEBUG [Test worker] com.shalkevich.service.TaskExecutor : Создана задача для диапазона: 3 - 5
+2024-12-09T18:00:18.476+03:00 DEBUG [Test worker] com.shalkevich.service.TaskExecutor : Создана задача для диапазона: 6 - 8
+2024-12-09T18:00:18.476+03:00 DEBUG [Test worker] com.shalkevich.service.TaskExecutor : Создана задача для диапазона: 9 - 9
+2024-12-09T18:00:18.477+03:00 DEBUG [Test worker] com.shalkevich.service.TaskExecutor : Запуск задач...
+2024-12-09T18:00:18.477+03:00 DEBUG [pool-2-thread-1] com.shalkevich.service.TaskExecutor : Запуск задачи для диапазона: 0 - 2
+2024-12-09T18:00:18.477+03:00 DEBUG [pool-2-thread-2] com.shalkevich.service.TaskExecutor : Запуск задачи для диапазона: 3 - 5
+2024-12-09T18:00:18.477+03:00 DEBUG [pool-2-thread-1] com.shalkevich.model.Task : Начало вычислений для диапазона: 0 - 2
+2024-12-09T18:00:18.477+03:00 DEBUG [Test worker] com.shalkevich.service.TaskExecutor : Все задачи запущены.
+2024-12-09T18:00:18.478+03:00 DEBUG [pool-2-thread-2] com.shalkevich.model.Task : Начало вычислений для диапазона: 3 - 5
+2024-12-09T18:00:18.477+03:00 DEBUG [pool-2-thread-3] com.shalkevich.service.TaskExecutor : Запуск задачи для диапазона: 6 - 8
+2024-12-09T18:00:18.478+03:00 DEBUG [pool-2-thread-4] com.shalkevich.service.TaskExecutor : Запуск задачи для диапазона: 9 - 9
+2024-12-09T18:00:18.478+03:00 DEBUG [pool-2-thread-1] com.shalkevich.model.Task : Шаг 0: значение 1.0
+2024-12-09T18:00:18.478+03:00 DEBUG [pool-2-thread-3] com.shalkevich.model.Task : Начало вычислений для диапазона: 6 - 8
+2024-12-09T18:00:18.478+03:00 DEBUG [pool-2-thread-4] com.shalkevich.model.Task : Начало вычислений для диапазона: 9 - 9
+2024-12-09T18:00:18.478+03:00 DEBUG [pool-2-thread-3] com.shalkevich.model.Task : Шаг 6: значение 0.015625
+2024-12-09T18:00:18.478+03:00 DEBUG [pool-2-thread-4] com.shalkevich.model.Task : Шаг 9: значение 0.001953125
+2024-12-09T18:00:18.478+03:00 DEBUG [pool-2-thread-2] com.shalkevich.model.Task : Шаг 3: значение 0.125
+2024-12-09T18:00:18.478+03:00 DEBUG [pool-2-thread-1] com.shalkevich.model.Task : Шаг 1: значение 0.5
+2024-12-09T18:00:18.478+03:00 DEBUG [pool-2-thread-3] com.shalkevich.model.Task : Шаг 7: значение 0.0078125
+2024-12-09T18:00:18.478+03:00 DEBUG [pool-2-thread-1] com.shalkevich.model.Task : Шаг 2: значение 0.25
+2024-12-09T18:00:18.478+03:00 DEBUG [pool-2-thread-4] com.shalkevich.model.Task : Вычисления завершены для диапазона: 9 - 9, результат: 0.001953125
+2024-12-09T18:00:18.478+03:00 DEBUG [pool-2-thread-2] com.shalkevich.model.Task : Шаг 4: значение 0.0625
+2024-12-09T18:00:18.479+03:00 DEBUG [pool-2-thread-3] com.shalkevich.model.Task : Шаг 8: значение 0.00390625
+2024-12-09T18:00:18.479+03:00 DEBUG [pool-2-thread-1] com.shalkevich.model.Task : Вычисления завершены для диапазона: 0 - 2, результат: 1.75
+2024-12-09T18:00:18.479+03:00 DEBUG [pool-2-thread-4] com.shalkevich.service.TaskExecutor : Задача для диапазона: 9 - 9 завершена, результат: 0.001953125
+2024-12-09T18:00:18.479+03:00 DEBUG [pool-2-thread-2] com.shalkevich.model.Task : Шаг 5: значение 0.03125
+2024-12-09T18:00:18.479+03:00 DEBUG [pool-2-thread-3] com.shalkevich.model.Task : Вычисления завершены для диапазона: 6 - 8, результат: 0.02734375
+2024-12-09T18:00:18.479+03:00 DEBUG [pool-2-thread-1] com.shalkevich.service.TaskExecutor : Задача для диапазона: 0 - 2 завершена, результат: 1.75
+2024-12-09T18:00:18.479+03:00 DEBUG [pool-2-thread-2] com.shalkevich.model.Task : Вычисления завершены для диапазона: 3 - 5, результат: 0.21875
+2024-12-09T18:00:18.479+03:00 DEBUG [pool-2-thread-3] com.shalkevich.service.TaskExecutor : Задача для диапазона: 6 - 8 завершена, результат: 0.02734375
+2024-12-09T18:00:18.479+03:00 DEBUG [pool-2-thread-2] com.shalkevich.service.TaskExecutor : Задача для диапазона: 3 - 5 завершена, результат: 0.21875
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
