@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Rectangle.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">task2</a> &gt; <a href="index.source.html" class="el_package">com.shalkevich.figures</a> &gt; <span class="el_source">Rectangle.java</span></div><h1>Rectangle.java</h1><pre class="source lang-java linenums">package com.shalkevich.figures;
+
+import java.util.logging.Logger;
+
+public class Rectangle extends AbstractFigure {
+<span class="nc" id="L6">    private static final Logger logger = Logger.getLogger(Rectangle.class.getName());</span>
+
+    private final double length;
+    private final double width;
+
+<span class="nc" id="L11">    public Rectangle(double length, double width) {</span>
+<span class="nc" id="L12">        this.length = length;</span>
+<span class="nc" id="L13">        this.width = width;</span>
+<span class="nc" id="L14">        logger.info(&quot;Rectangle created with length: &quot; + length + &quot; and width: &quot; + width);</span>
+<span class="nc" id="L15">    }</span>
+
+    @Override
+    public String getName() {
+<span class="nc" id="L19">        return &quot;РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє&quot;;</span>
+    }
+
+    @Override
+    public double getArea() {
+<span class="nc" id="L24">        return length * width;</span>
+    }
+
+    @Override
+    public double getPerimeter() {
+<span class="nc" id="L29">        return 2 * (length + width);</span>
+    }
+
+    public double getLength() {
+<span class="nc" id="L33">        return length;</span>
+    }
+
+    public double getWidth() {
+<span class="nc" id="L37">        return width;</span>
+    }
+
+    public double getDiagonal() {
+<span class="nc" id="L41">        return Math.sqrt(length * length + width * width);</span>
+    }
+
+    @Override
+    public String getSpecificCharacteristics() {
+<span class="nc" id="L46">        logger.info(&quot;Getting specific characteristics for Rectangle&quot;);</span>
+<span class="nc" id="L47">        return String.format(&quot;\nР”Р»РёРЅР°: %.2f РјРј\nРЁРёСЂРёРЅР°: %.2f РјРј\nР”РёР°РіРѕРЅР°Р»СЊ: %.2f РјРј&quot;,</span>
+<span class="nc" id="L48">                getLength(), getWidth(), getDiagonal());</span>
+    }
+
+
+}
+
+
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

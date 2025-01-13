@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Circle.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">task2</a> &gt; <a href="index.source.html" class="el_package">com.shalkevich.figures</a> &gt; <span class="el_source">Circle.java</span></div><h1>Circle.java</h1><pre class="source lang-java linenums">package com.shalkevich.figures;
+
+import java.util.logging.Logger;
+
+public class Circle extends AbstractFigure {
+<span class="fc" id="L6">    private static final Logger logger = Logger.getLogger(Circle.class.getName());</span>
+
+    private final double radius;
+
+<span class="fc" id="L10">    public Circle(double radius) {</span>
+<span class="fc" id="L11">        this.radius = radius;</span>
+<span class="fc" id="L12">        logger.info(&quot;Circle created with radius: &quot; + radius);</span>
+<span class="fc" id="L13">    }</span>
+
+    @Override
+    public String getName() {
+<span class="fc" id="L17">        return &quot;РљСЂСѓРі&quot;;</span>
+    }
+
+    @Override
+    public double getArea() {
+<span class="fc" id="L22">        return Math.PI * radius * radius;</span>
+    }
+
+    @Override
+    public double getPerimeter() {
+<span class="fc" id="L27">        return 2 * Math.PI * radius;</span>
+    }
+
+    public double getRadius() {
+<span class="fc" id="L31">        return radius;</span>
+    }
+
+    public double getDiameter() {
+<span class="fc" id="L35">        return 2 * radius;</span>
+    }
+
+    @Override
+    public String getSpecificCharacteristics() {
+<span class="fc" id="L40">        logger.info(&quot;Getting specific characteristics for Circle&quot;);</span>
+<span class="fc" id="L41">        return String.format(&quot;\nР Р°РґРёСѓСЃ: %.2f РјРј\nР”РёР°РјРµС‚СЂ: %.2f РјРј&quot;, getRadius(), getDiameter());</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

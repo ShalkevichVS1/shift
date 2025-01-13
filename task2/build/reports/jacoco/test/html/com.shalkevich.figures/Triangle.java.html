@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Triangle.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">task2</a> &gt; <a href="index.source.html" class="el_package">com.shalkevich.figures</a> &gt; <span class="el_source">Triangle.java</span></div><h1>Triangle.java</h1><pre class="source lang-java linenums">package com.shalkevich.figures;
+
+import java.util.logging.Logger;
+
+public class Triangle extends AbstractFigure {
+<span class="nc" id="L6">    private static final Logger logger = Logger.getLogger(Triangle.class.getName());</span>
+
+    private final double a;
+    private final double b;
+    private final double c;
+
+<span class="nc" id="L12">    public Triangle(double a, double b, double c) {</span>
+<span class="nc" id="L13">        this.a = a;</span>
+<span class="nc" id="L14">        this.b = b;</span>
+<span class="nc" id="L15">        this.c = c;</span>
+<span class="nc" id="L16">        logger.info(&quot;Triangle created with sides: &quot; + a + &quot;, &quot; + b + &quot;, &quot; + c);</span>
+<span class="nc" id="L17">    }</span>
+
+    @Override
+    public String getName() {
+<span class="nc" id="L21">        return &quot;РўСЂРµСѓРіРѕР»СЊРЅРёРє&quot;;</span>
+    }
+
+    @Override
+    public double getArea() {
+<span class="nc" id="L26">        double s = (a + b + c) / 2;</span>
+<span class="nc" id="L27">        return Math.sqrt(s * (s - a) * (s - b) * (s - c));</span>
+    }
+
+    @Override
+    public double getPerimeter() {
+<span class="nc" id="L32">        return a + b + c;</span>
+    }
+
+    public double getA() {
+<span class="nc" id="L36">        return a;</span>
+    }
+
+    public double getB() {
+<span class="nc" id="L40">        return b;</span>
+    }
+
+    public double getC() {
+<span class="nc" id="L44">        return c;</span>
+    }
+
+    @Override
+    public String getSpecificCharacteristics() {
+<span class="nc" id="L49">        logger.info(&quot;Getting specific characteristics for Triangle&quot;);</span>
+<span class="nc" id="L50">        return String.format(&quot;\nРЎС‚РѕСЂРѕРЅР° A: %.2f РјРј\nРЎС‚РѕСЂРѕРЅР° B: %.2f РјРј\nРЎС‚РѕСЂРѕРЅР° C: %.2f РјРј&quot;,</span>
+<span class="nc" id="L51">                getA(), getB(), getC());</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="by.shift.minesweeper.GameServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2024-12-07T17:35:55" hostname="LAPTOP-0VMO5VHI" time="0.064">
+  <properties/>
+  <testcase name="testToggleFlag()" classname="by.shift.minesweeper.GameServiceTest" time="0.016"/>
+  <testcase name="testCheckWin_WithWin()" classname="by.shift.minesweeper.GameServiceTest" time="0.005"/>
+  <testcase name="testCheckWin_WithoutWin()" classname="by.shift.minesweeper.GameServiceTest" time="0.005"/>
+  <testcase name="testGameOverMessage()" classname="by.shift.minesweeper.GameServiceTest" time="0.004"/>
+  <testcase name="testRevealCell_Mine()" classname="by.shift.minesweeper.GameServiceTest" time="0.005"/>
+  <testcase name="testCreateNewGame()" classname="by.shift.minesweeper.GameServiceTest" time="0.004"/>
+  <testcase name="testRevealCell_NoMine()" classname="by.shift.minesweeper.GameServiceTest" time="0.009"/>
+  <testcase name="testWinMessage()" classname="by.shift.minesweeper.GameServiceTest" time="0.004"/>
+  <system-out><![CDATA[2024-12-07 20:35:56 INFO  b.s.minesweeper.service.GameService - Game initialized: 
+2024-12-07 20:35:56 DEBUG b.s.minesweeper.service.BoardHelper - ---------- Игровое поле ----------
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.BoardHelper - 
+. . . . . 
+. . . . . 
+. . X . X 
+X . . . . 
+. . . X X 
+
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.BoardHelper - ----------------------------------
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.GameService - Game initialized: 
+2024-12-07 20:35:56 DEBUG b.s.minesweeper.service.BoardHelper - ---------- Игровое поле ----------
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.BoardHelper - 
+. X . . . 
+. X . . . 
+. . X . . 
+X . . . . 
+. . . . X 
+
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.BoardHelper - ----------------------------------
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.GameService - Поздравляем! Вы выиграли!
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.GameService - Game initialized: 
+2024-12-07 20:35:56 DEBUG b.s.minesweeper.service.BoardHelper - ---------- Игровое поле ----------
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.BoardHelper - 
+. X . . . 
+. X . . . 
+. X . . . 
+. . . X . 
+. X . . . 
+
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.BoardHelper - ----------------------------------
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.GameService - Game initialized: 
+2024-12-07 20:35:56 DEBUG b.s.minesweeper.service.BoardHelper - ---------- Игровое поле ----------
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.BoardHelper - 
+X . . X X 
+. . . . . 
+. . . . . 
+. X . X . 
+. . . . . 
+
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.BoardHelper - ----------------------------------
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.GameService - Вы проиграли! Попробуйте ещё раз!
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.GameService - Game initialized: 
+2024-12-07 20:35:56 DEBUG b.s.minesweeper.service.BoardHelper - ---------- Игровое поле ----------
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.BoardHelper - 
+. . . X . 
+. . X . . 
+. . . X X 
+. X . . . 
+. . . . . 
+
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.BoardHelper - ----------------------------------
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.GameService - Вы проиграли! Попробуйте ещё раз!
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.GameService - Game initialized: 
+2024-12-07 20:35:56 DEBUG b.s.minesweeper.service.BoardHelper - ---------- Игровое поле ----------
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.BoardHelper - 
+X . . . X 
+. . X . . 
+. . . . . 
+. . . X X 
+. . . . . 
+
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.BoardHelper - ----------------------------------
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.GameService - Game initialized: 
+2024-12-07 20:35:56 DEBUG b.s.minesweeper.service.BoardHelper - ---------- Игровое поле ----------
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.BoardHelper - 
+. . X . . 
+. . X . . 
+. X . . . 
+. X . . . 
+X . . . . 
+
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.BoardHelper - ----------------------------------
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.GameService - Game initialized: 
+2024-12-07 20:35:56 DEBUG b.s.minesweeper.service.BoardHelper - ---------- Игровое поле ----------
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.BoardHelper - 
+. . . . . . . . . . 
+. . . . . . . X . X 
+X . . . . . . . . . 
+. . . . . . . . . X 
+. . X . . . . . . . 
+. . . . . . . . X . 
+. . . . . X . . . . 
+. . . . . . . . . . 
+. . . . . . . X . . 
+. . X . . . . . . X 
+
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.BoardHelper - ----------------------------------
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.GameService - Game initialized: 
+2024-12-07 20:35:56 DEBUG b.s.minesweeper.service.BoardHelper - ---------- Игровое поле ----------
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.BoardHelper - 
+X . X . . 
+. . . X . 
+. X . X . 
+. . . . . 
+. . . . . 
+
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.BoardHelper - ----------------------------------
+2024-12-07 20:35:56 INFO  b.s.minesweeper.service.GameService - Поздравляем! Вы выиграли!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

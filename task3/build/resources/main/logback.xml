@@ -1,0 +1,20 @@
+<configuration>
+
+    <!-- Настройка аппендера для вывода логов в консоль -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Настройка корневого логгера для вывода всех логов на консоль -->
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+    <!-- Пример дополнительной настройки логгера для определенного пакета -->
+    <logger name="by.shift.minesweeper" level="DEBUG" additivity="false">
+        <appender-ref ref="STDOUT" />
+    </logger>
+
+</configuration>
