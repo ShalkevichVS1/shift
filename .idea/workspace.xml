@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1dcf6739-0a85-44d0-a1df-910a9c16ffe9" name="Changes" comment="I have done 4 tasks" />
+    <list default="true" id="1dcf6739-0a85-44d0-a1df-910a9c16ffe9" name="Changes" comment="commit before pull request">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -137,65 +141,65 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AnnotatedMemoryPanel.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.MinesweeperApplication.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Gradle.Build shift.executor": "Run",
-    "Gradle.CalculationServiceTest.executor": "Run",
-    "Gradle.CalculationServiceTest.testCalculateSum.executor": "Run",
-    "Gradle.CircleTest.executor": "Run",
-    "Gradle.ConsoleOutputWriterTest (1).executor": "Run",
-    "Gradle.ConsoleOutputWriterTest.executor": "Run",
-    "Gradle.DescriptionServiceFactoryTest (1).executor": "Run",
-    "Gradle.DescriptionServiceFactoryTest.executor": "Run",
-    "Gradle.FigureFactoryTest.executor": "Run",
-    "Gradle.FigureFactoryTest.testGetDescriptionServiceWithInvalidType.executor": "Run",
-    "Gradle.FigureReaderTest.executor": "Run",
-    "Gradle.FigureReaderTest.testReadAndProcessFigure.executor": "Run",
-    "Gradle.FigureReaderTest.testReadFigureFileNotFound.executor": "Run",
-    "Gradle.FileOutputWriterTest (1).executor": "Run",
-    "Gradle.FileOutputWriterTest.executor": "Run",
-    "Gradle.FunctionStrategyTest.executor": "Run",
-    "Gradle.RectangleTest.executor": "Run",
-    "Gradle.TaskExecutorTest.executor": "Run",
-    "Gradle.TaskTest.executor": "Run",
-    "Gradle.Tests in 'com.shalkevich.figures'.executor": "Run",
-    "Gradle.Tests in 'com.shalkevich.writer'.executor": "Run",
-    "Gradle.Tests in 'shift.task2.test'.executor": "Run",
-    "Gradle.Tests in 'shift.task4.test'.executor": "Run",
-    "Gradle.TriangleTest.executor": "Run",
-    "Gradle.shift [dependencies].executor": "Run",
-    "Gradle.shift.executor": "Run",
-    "Gradle.shift:task2 [:task2:com.shalkevich.Main.main()].executor": "Run",
-    "Gradle.shift:task4 [:task4:com.shalkevich.Main.main()].executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.Unnamed.executor": "Run",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/shift/task2",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AnnotatedMemoryPanel.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MinesweeperApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Gradle.Build shift.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CalculationServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CalculationServiceTest.testCalculateSum.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CircleTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ConsoleOutputWriterTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ConsoleOutputWriterTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DescriptionServiceFactoryTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DescriptionServiceFactoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.FigureFactoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.FigureFactoryTest.testGetDescriptionServiceWithInvalidType.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.FigureReaderTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.FigureReaderTest.testReadAndProcessFigure.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.FigureReaderTest.testReadFigureFileNotFound.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.FileOutputWriterTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.FileOutputWriterTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.FunctionStrategyTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.RectangleTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TaskExecutorTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TaskTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'com.shalkevich.figures'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'com.shalkevich.writer'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'shift.task2.test'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'shift.task4.test'.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TriangleTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.shift [dependencies].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.shift.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.shift:task2 [:task2:com.shalkevich.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.shift:task4 [:task4:com.shalkevich.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/shift/task2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\shift\task2" />
@@ -379,11 +383,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MultiplicationTable" />
-        <item itemvalue="Application.com.shalkevich.Main1" />
-        <item itemvalue="Application.com.shalkevich.Main" />
         <item itemvalue="Gradle.Tests in 'shift.task2.test'" />
         <item itemvalue="Gradle.FigureFactoryTest.testGetDescriptionServiceWithInvalidType" />
+        <item itemvalue="Application.com.shalkevich.Main1" />
+        <item itemvalue="Application.com.shalkevich.Main" />
+        <item itemvalue="Application.MultiplicationTable" />
       </list>
     </recent_temporary>
   </component>
@@ -621,7 +625,8 @@
     <MESSAGE value="I fixed everything, the tests are running" />
     <MESSAGE value="Fixed the issue with instanceof" />
     <MESSAGE value="I have done 4 tasks" />
-    <option name="LAST_COMMIT_MESSAGE" value="I have done 4 tasks" />
+    <MESSAGE value="commit before pull request" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit before pull request" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/shift$Tests_in__shift_task2_test_.ic" NAME="Tests in 'shift.task2.test' Coverage Results" MODIFIED="1731233938669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
