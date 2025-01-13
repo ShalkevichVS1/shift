@@ -26,13 +26,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="1dcf6739-0a85-44d0-a1df-910a9c16ffe9" name="Changes" comment="Коммит перед pull requests">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_12_2024_22_05_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_12_2024_22_05__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +61,11 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="shift" type="f1a62948:ProjectNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="shift" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -73,9 +76,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -118,7 +121,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="feature/task2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -193,10 +196,8 @@
     "Gradle.TriangleTest.executor": "Run",
     "Gradle.shift [dependencies].executor": "Run",
     "Gradle.shift.executor": "Run",
-    "Gradle.shift:task1 [:task1:com.shalkevich.Main.main()].executor": "Run",
     "Gradle.shift:task2 [:task2:com.shalkevich.Main.main()].executor": "Run",
     "Gradle.shift:task4 [:task4:com.shalkevich.Main.main()].executor": "Run",
-    "Gradle.shift:task5 [:task5:com.shalkevich.Main.main()].executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -205,18 +206,17 @@
     "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.Unnamed.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "feature.task5",
+    "git-widget-placeholder": "#5 on feature/task4",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_directory_selection": "D:/shift/task5/src/main/java/com/shalkevich",
     "last_opened_file_path": "D:/shift/task2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
@@ -236,7 +236,7 @@
       <recent name="D:\shift\task2\src\main\java\com\shalkevich" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.com.shalkevich.Main">
     <configuration name="AnnotatedMemoryPanel" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sun.jvm.hotspot.ui.AnnotatedMemoryPanel" />
       <module name="shift.task3" />
@@ -265,19 +265,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.shalkevich.Main" />
-      <module name="shift.task5.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.shalkevich.interfaces.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MultiplicationTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.shalkevich.projectLogic.MultiplicationTable" />
       <module name="shift.task1.main" />
@@ -296,6 +283,19 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <module name="shift.task3" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/task3/mineswipper/src/main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.shalkevich.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.shalkevich.Main" />
+      <module name="shift.task1.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.shalkevich.interfaces.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -383,14 +383,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MinesweeperApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="shift.task3.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="by.shift.minesweeper.MinesweeperApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Unnamed" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -402,21 +394,21 @@
     </configuration>
     <list>
       <item itemvalue="Application.AnnotatedMemoryPanel" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="Application.Unnamed" />
       <item itemvalue="Application.MultiplicationTable" />
-      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.com.shalkevich.Main" />
       <item itemvalue="Application.com.shalkevich.Main1" />
       <item itemvalue="Gradle.FigureReaderTest.testReadFigureInvalidFileFormat" />
       <item itemvalue="Gradle.FigureFactoryTest.testGetDescriptionServiceWithInvalidType" />
       <item itemvalue="Gradle.Tests in 'shift.task2.test'" />
-      <item itemvalue="Spring Boot.MinesweeperApplication" />
       <item itemvalue="Spring Boot.Unnamed" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.MultiplicationTable" />
         <item itemvalue="Application.com.shalkevich.Main1" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.com.shalkevich.Main" />
         <item itemvalue="Gradle.Tests in 'shift.task2.test'" />
         <item itemvalue="Gradle.FigureFactoryTest.testGetDescriptionServiceWithInvalidType" />
       </list>
