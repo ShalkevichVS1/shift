@@ -4,10 +4,83 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1dcf6739-0a85-44d0-a1df-910a9c16ffe9" name="Changes" comment="commit before pull request">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+    <list default="true" id="1dcf6739-0a85-44d0-a1df-910a9c16ffe9" name="Changes" comment="gggg">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/chat-server.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/com.shalkevich.chat-ui.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/task2/shift.task2.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/task3/shift.task3.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/task6/chat-shift/chat-server/shift.task6.chat-shift.chat-server.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/task6/chat-shift/shift.task6.chat-shift.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task5/build/classes/java/main/com/shalkevich/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task5/build/classes/java/main/com/shalkevich/consumer/Consumer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task5/build/classes/java/main/com/shalkevich/consumer/ResourceConsumer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task5/build/classes/java/main/com/shalkevich/manager/AppManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task5/build/classes/java/main/com/shalkevich/producer/Producer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task5/build/classes/java/main/com/shalkevich/producer/ResourceProducer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task5/build/classes/java/main/com/shalkevich/storage/ResourceStorage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task5/build/classes/java/main/com/shalkevich/util/LogEvent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task5/build/classes/java/main/com/shalkevich/util/Resource.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task5/build/resources/main/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task5/build/resources/main/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task5/build/tmp/compileJava/compileTransaction/stash-dir/AppManager.class.uniqueId7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task5/build/tmp/compileJava/compileTransaction/stash-dir/Consumer.class.uniqueId8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task5/build/tmp/compileJava/compileTransaction/stash-dir/LogEvent.class.uniqueId1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task5/build/tmp/compileJava/compileTransaction/stash-dir/Main.class.uniqueId0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task5/build/tmp/compileJava/compileTransaction/stash-dir/Producer.class.uniqueId3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task5/build/tmp/compileJava/compileTransaction/stash-dir/Resource.class.uniqueId4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task5/build/tmp/compileJava/compileTransaction/stash-dir/ResourceConsumer.class.uniqueId2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task5/build/tmp/compileJava/compileTransaction/stash-dir/ResourceProducer.class.uniqueId5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task5/build/tmp/compileJava/compileTransaction/stash-dir/ResourceStorage.class.uniqueId6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task5/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socker-server/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socker-server/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socker-server/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socker-server/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socker-server/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socker-server/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socker-server/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socker-server/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socker-server/src/main/java/com/shalkevich/sockerserver/SockerServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socker-server/src/main/java/com/shalkevich/sockerserver/config/JacksonConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socker-server/src/main/java/com/shalkevich/sockerserver/config/WebSocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socker-server/src/main/java/com/shalkevich/sockerserver/controller/MessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socker-server/src/main/java/com/shalkevich/sockerserver/model/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socker-server/src/main/java/com/shalkevich/sockerserver/repository/InMemoryMessageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socker-server/src/main/java/com/shalkevich/sockerserver/repository/MessageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socker-server/src/main/java/com/shalkevich/sockerserver/websoket/ChatWebSocketHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socker-server/src/main/java/com/shalkevich/sockerserver/websoket/MessageHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socker-server/src/main/java/com/shalkevich/sockerserver/websoket/SessionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socker-server/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socker-server/src/test/java/com/shalkevich/sockerserver/SockerServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socket-client/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socket-client/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socket-client/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socket-client/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socket-client/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socket-client/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socket-client/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socket-client/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socket-client/src/main/java/com/shalkevich/socketclient/SocketClientApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socket-client/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socket-client/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socket-client/src/main/resources/static/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socket-client/src/main/resources/static/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task8/socket-client/src/test/java/com/shalkevich/socketclient/SocketClientApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_11_2024_19_07_[Changes]/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_11_2024_19_07_[Changes]/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_11_2024_19_07_[Changes]/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_11_2024_19_07_[Changes]/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_11_2024_19_07_[Changes]/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_11_2024_19_07_[Changes]/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_11_2024_19_07_[Changes]/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_11_2024_19_07_[Changes]/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_11_2024_19_07_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_11_2024_19_07__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.run/Template Spring Boot.run.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task2/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/task2/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,65 +214,65 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AnnotatedMemoryPanel.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MinesweeperApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Gradle.Build shift.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalculationServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CalculationServiceTest.testCalculateSum.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CircleTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ConsoleOutputWriterTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ConsoleOutputWriterTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.DescriptionServiceFactoryTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.DescriptionServiceFactoryTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.FigureFactoryTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.FigureFactoryTest.testGetDescriptionServiceWithInvalidType.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.FigureReaderTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.FigureReaderTest.testReadAndProcessFigure.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.FigureReaderTest.testReadFigureFileNotFound.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.FileOutputWriterTest (1).executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.FileOutputWriterTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.FunctionStrategyTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.RectangleTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TaskExecutorTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TaskTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Tests in 'com.shalkevich.figures'.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Tests in 'com.shalkevich.writer'.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Tests in 'shift.task2.test'.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Tests in 'shift.task4.test'.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TriangleTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.shift [dependencies].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.shift.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.shift:task2 [:task2:com.shalkevich.Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.shift:task4 [:task4:com.shalkevich.Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.Unnamed.executor&quot;: &quot;Run&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/shift/task2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AnnotatedMemoryPanel.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.MinesweeperApplication.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.Build shift.executor": "Run",
+    "Gradle.CalculationServiceTest.executor": "Run",
+    "Gradle.CalculationServiceTest.testCalculateSum.executor": "Run",
+    "Gradle.CircleTest.executor": "Run",
+    "Gradle.ConsoleOutputWriterTest (1).executor": "Run",
+    "Gradle.ConsoleOutputWriterTest.executor": "Run",
+    "Gradle.DescriptionServiceFactoryTest (1).executor": "Run",
+    "Gradle.DescriptionServiceFactoryTest.executor": "Run",
+    "Gradle.FigureFactoryTest.executor": "Run",
+    "Gradle.FigureFactoryTest.testGetDescriptionServiceWithInvalidType.executor": "Run",
+    "Gradle.FigureReaderTest.executor": "Run",
+    "Gradle.FigureReaderTest.testReadAndProcessFigure.executor": "Run",
+    "Gradle.FigureReaderTest.testReadFigureFileNotFound.executor": "Run",
+    "Gradle.FileOutputWriterTest (1).executor": "Run",
+    "Gradle.FileOutputWriterTest.executor": "Run",
+    "Gradle.FunctionStrategyTest.executor": "Run",
+    "Gradle.RectangleTest.executor": "Run",
+    "Gradle.TaskExecutorTest.executor": "Run",
+    "Gradle.TaskTest.executor": "Run",
+    "Gradle.Tests in 'com.shalkevich.figures'.executor": "Run",
+    "Gradle.Tests in 'com.shalkevich.writer'.executor": "Run",
+    "Gradle.Tests in 'shift.task2.test'.executor": "Run",
+    "Gradle.Tests in 'shift.task4.test'.executor": "Run",
+    "Gradle.TriangleTest.executor": "Run",
+    "Gradle.shift [dependencies].executor": "Run",
+    "Gradle.shift.executor": "Run",
+    "Gradle.shift:task2 [:task2:com.shalkevich.Main.main()].executor": "Run",
+    "Gradle.shift:task4 [:task4:com.shalkevich.Main.main()].executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.Unnamed.executor": "Run",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Merging master",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/shift/task2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\shift\task2" />
@@ -593,7 +666,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733757215837</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="gggg">
+      <option name="closed" value="true" />
+      <created>1736762426402</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1736762426402</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -626,7 +707,8 @@
     <MESSAGE value="Fixed the issue with instanceof" />
     <MESSAGE value="I have done 4 tasks" />
     <MESSAGE value="commit before pull request" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit before pull request" />
+    <MESSAGE value="gggg" />
+    <option name="LAST_COMMIT_MESSAGE" value="gggg" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/shift$Tests_in__shift_task2_test_.ic" NAME="Tests in 'shift.task2.test' Coverage Results" MODIFIED="1731233938669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
